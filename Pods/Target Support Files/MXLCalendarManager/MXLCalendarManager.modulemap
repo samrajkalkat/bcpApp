@@ -1,0 +1,6 @@
+framework module MXLCalendarManager {
+  umbrella header "MXLCalendarManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

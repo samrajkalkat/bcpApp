@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C12F9FADAE99A8F7DB615F0 /* Pods_bcpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA13E4150DE4A9D92E5972 /* Pods_bcpApp.framework */; };
+		F90FDF9F1D51117B0023A703 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */; };
+		F90FDFA31D5174F70023A703 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = F90FDFA21D5174F70023A703 /* events.json */; };
+		F92873DE1D5031EB008A2714 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92873DD1D5031EB008A2714 /* RealmHelper.swift */; };
+		F93FA3881D500F1000C54AA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FA3871D500F1000C54AA8 /* LoginViewController.swift */; };
+		F97F304A1D51B4B80013CECD /* CalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F30491D51B4B80013CECD /* CalViewController.swift */; };
 		F9C97E231D4FB78300C9573C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E221D4FB78300C9573C /* AppDelegate.swift */; };
 		F9C97E251D4FB78300C9573C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E241D4FB78300C9573C /* ViewController.swift */; };
 		F9C97E281D4FB78300C9573C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97E261D4FB78300C9573C /* Main.storyboard */; };
@@ -15,9 +21,19 @@
 		F9C97E301D4FB78300C9573C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97E2E1D4FB78300C9573C /* LaunchScreen.storyboard */; };
 		F9C97E391D4FB7C600C9573C /* GradebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */; };
 		F9C97E3B1D4FC34600C9573C /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */; };
+		F9F3BA4C1D502A8700B17D55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F3BA4B1D502A8700B17D55 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12CA13E4150DE4A9D92E5972 /* Pods_bcpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bcpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5882DE388695EFC36D646AF /* Pods-bcpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bcpApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DDFBCAA97B5E00649521E1D4 /* Pods-bcpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bcpApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp.release.xcconfig"; sourceTree = "<group>"; };
+		F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F90FDFA21D5174F70023A703 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = events.json; path = ../../Documents/BellEvents/events.json; sourceTree = "<group>"; };
+		F92873DD1D5031EB008A2714 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		F93FA3871D500F1000C54AA8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F97F30481D51B3CC0013CECD /* bcpApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bcpApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F97F30491D51B4B80013CECD /* CalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalViewController.swift; sourceTree = "<group>"; };
 		F9C97E1F1D4FB78300C9573C /* bcpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bcpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97E221D4FB78300C9573C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C97E241D4FB78300C9573C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +44,7 @@
 		F9C97E311D4FB78300C9573C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradebookViewController.swift; sourceTree = "<group>"; };
 		F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		F9F3BA4B1D502A8700B17D55 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +52,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C12F9FADAE99A8F7DB615F0 /* Pods_bcpApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0292BBA0D7110F6D9570EA89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5882DE388695EFC36D646AF /* Pods-bcpApp.debug.xcconfig */,
+				DDFBCAA97B5E00649521E1D4 /* Pods-bcpApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6C1C88C53F2FE7491904DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12CA13E4150DE4A9D92E5972 /* Pods_bcpApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F92873DC1D5031E2008A2714 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F92873DD1D5031EB008A2714 /* RealmHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = SOURCE_ROOT;
+		};
 		F9C97E161D4FB78300C9573C = {
 			isa = PBXGroup;
 			children = (
+				F97F30481D51B3CC0013CECD /* bcpApp-Bridging-Header.h */,
+				F90FDFA21D5174F70023A703 /* events.json */,
 				F9C97E211D4FB78300C9573C /* bcpApp */,
 				F9C97E201D4FB78300C9573C /* Products */,
+				0292BBA0D7110F6D9570EA89 /* Pods */,
+				D6C1C88C53F2FE7491904DC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +107,8 @@
 		F9C97E211D4FB78300C9573C /* bcpApp */ = {
 			isa = PBXGroup;
 			children = (
+				F92873DC1D5031E2008A2714 /* Helpers */,
+				F9F3BA4A1D502A7F00B17D55 /* Models */,
 				F9C97E371D4FB7B400C9573C /* ViewControllers */,
 				F9C97E221D4FB78300C9573C /* AppDelegate.swift */,
 				F9C97E241D4FB78300C9573C /* ViewController.swift */,
@@ -77,8 +126,19 @@
 			children = (
 				F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */,
 				F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */,
+				F93FA3871D500F1000C54AA8 /* LoginViewController.swift */,
+				F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */,
+				F97F30491D51B4B80013CECD /* CalViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9F3BA4A1D502A7F00B17D55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9F3BA4B1D502A8700B17D55 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C97E341D4FB78300C9573C /* Build configuration list for PBXNativeTarget "bcpApp" */;
 			buildPhases = (
+				D5F1E6B5314BDFCE6B586912 /* [CP] Check Pods Manifest.lock */,
 				F9C97E1B1D4FB78300C9573C /* Sources */,
 				F9C97E1C1D4FB78300C9573C /* Frameworks */,
 				F9C97E1D1D4FB78300C9573C /* Resources */,
+				0F8546BEA8EE959AF25F97AB /* [CP] Embed Pods Frameworks */,
+				843E350B3179066C0DAC7E5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90FDFA31D5174F70023A703 /* events.json in Resources */,
 				F9C97E301D4FB78300C9573C /* LaunchScreen.storyboard in Resources */,
 				F9C97E2D1D4FB78300C9573C /* Assets.xcassets in Resources */,
 				F9C97E281D4FB78300C9573C /* Main.storyboard in Resources */,
@@ -147,16 +211,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F8546BEA8EE959AF25F97AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843E350B3179066C0DAC7E5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F1E6B5314BDFCE6B586912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9C97E1B1D4FB78300C9573C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90FDF9F1D51117B0023A703 /* CalendarViewController.swift in Sources */,
+				F97F304A1D51B4B80013CECD /* CalViewController.swift in Sources */,
+				F93FA3881D500F1000C54AA8 /* LoginViewController.swift in Sources */,
 				F9C97E2B1D4FB78300C9573C /* bcpApp.xcdatamodeld in Sources */,
 				F9C97E391D4FB7C600C9573C /* GradebookViewController.swift in Sources */,
 				F9C97E251D4FB78300C9573C /* ViewController.swift in Sources */,
 				F9C97E231D4FB78300C9573C /* AppDelegate.swift in Sources */,
+				F92873DE1D5031EB008A2714 /* RealmHelper.swift in Sources */,
 				F9C97E3B1D4FC34600C9573C /* EmailViewController.swift in Sources */,
+				F9F3BA4C1D502A8700B17D55 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,23 +386,42 @@
 		};
 		F9C97E351D4FB78300C9573C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5882DE388695EFC36D646AF /* Pods-bcpApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+				);
 				INFOPLIST_FILE = bcpApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kalkat.bcpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		F9C97E361D4FB78300C9573C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFBCAA97B5E00649521E1D4 /* Pods-bcpApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+				);
 				INFOPLIST_FILE = bcpApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kalkat.bcpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -308,6 +444,7 @@
 				F9C97E361D4FB78300C9573C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

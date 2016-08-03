@@ -1,0 +1,1859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0088F4DFBA65EA0F1174D221800FEE52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		009BF5298BD5F019F67177E0271D1A3E /* RLMObservation.mm in Sources */ = {isa = PBXBuildFile; fileRef = C34211F8F9B8CE548E2ABDAA21F4D6BB /* RLMObservation.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		047B79A29909E7FCD0322A1C7B1020E3 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1692C29D19D068C1CD18985367301D /* RealmConfiguration.swift */; };
+		04EAC24D217ED05A7139662434BC7267 /* RLMObjectBase_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1D79DA9997175E9FD4D1B0D5828F44 /* RLMObjectBase_Dynamic.h */; };
+		057E74F4F157F591A3B0D3D70CD4050E /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 47991107916D4EDA5F846FF09FE3A3B8 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		063429F1607154DD20279C7930F57713 /* RLMObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE23D763D90C58696AF55E6C815A030 /* RLMObjectStore.h */; };
+		068ED42C98832DEE12A1DE4ACEC2375E /* RealmSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58987C824088092DCC17F6F9DF7F2ADF /* RealmSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06D1CBEB4EBC5BC12F5DF6A132A88455 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3C3B926ACBBCC78162857B1FA3F1B3 /* Aliases.swift */; };
+		089E261D6FBDEDDC2F475F6A75E643C7 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0348ADFEDEDAD1821F3E537772D4E41 /* CKCalendarView.m */; };
+		09D5E41A2EF175BBF5C2D95F0244FCA2 /* RLMAccessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CAFEB4BA7640D869F664E4B1482E383 /* RLMAccessor.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		09DFFD7EE9DB186C5273E4F6FF2432C4 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF49B1D59FDC461E216710BFD375CA8E /* Realm.swift */; };
+		09EFEAB185927E74190D6ABE3240C2E9 /* RLMResults.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32FF861BA0DFC6DADA3AAE830A927FB8 /* RLMResults.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		0D2D2E71FC6C27B9DD845913C2531374 /* MXLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1556847916244E7F8E3BB2502DD57 /* MXLCalendar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		105ED80C7C2B5E469A8FC2F188B3ADB0 /* results_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C4EC953FDE22527098C94EE0FBC356 /* results_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		1572B5945DCDBDC70E46E3DE3900E69D /* format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6CAE1C5DF28FFE24D87E79636134CCB /* format.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		1976D1E9B4E37B780CB012C325675D72 /* ObjectSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C93599A252E35D60027DEB61B4522 /* ObjectSchema.swift */; };
+		1A52C3C038891F2CD0ED48802F33ED37 /* RealmSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C186EF8C0FD3A9BCADC4AE0DFFF32F /* RealmSwift-dummy.m */; };
+		1EE099454B6D818C99101B3138BB4483 /* RLMRealmConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C0F654B63D1BA8D73E7EDA687079B6 /* RLMRealmConfiguration.h */; };
+		200ED816C798B965E2085A6B73DDF0F2 /* RLMRealm_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 07A8AC37F4D7F21A459F6E8A16C5F3AA /* RLMRealm_Private.h */; };
+		219E658D550CB52F8E71489205934721 /* RLMPredicateUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E390C510B45FDAF82663D49A60036CB /* RLMPredicateUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		2229D922AEC6D93F226E726D64041A8B /* RLMObjectSchema.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = F13967EC89C4AF40F73F828451192500 /* RLMObjectSchema.h */; };
+		22A36785B412B2EBBC68F567715B6EDA /* RLMRealm_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A8AC37F4D7F21A459F6E8A16C5F3AA /* RLMRealm_Private.h */; };
+		22C6B6DAC9E791F62B93D38C45A392F8 /* RLMObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E6183437811602B83BBE1FEDFDF0301 /* RLMObject.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		23B22BED8B55981C8A78918D15C80BF7 /* RLMOptionalBase.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAA80F7EC50108A7C31D921CE1FF597 /* RLMOptionalBase.h */; };
+		2464A5E70F916D23A7B5046200D7F689 /* MBCalendarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5386A9000B089443581E84A1E983AA8D /* MBCalendarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25174377DB547F63924308697641B5E4 /* RLMProperty_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 660ACC9CFBC761A670662CBB324B820A /* RLMProperty_Private.h */; };
+		287516D8632E655A80807F868FF404C4 /* list_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A886653BF7F44C9F726D6900F02BDE /* list_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		29333885C84F997C603BDE862FC5FB1C /* CKCalendarViewControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3E84DB487A0B0C11E7B675AB4E53A6 /* CKCalendarViewControllerInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B2EAB18DB44F4ACDBE8031522C974F8 /* RLMSwiftSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872AC09145BAAE05CE161D53DA70718 /* RLMSwiftSupport.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		2C7D19F94CFBD75F1505A1912102D71C /* realm_coordinator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F522F1B512AC3EF3F356EA9F095825A /* realm_coordinator.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		2D8381D959E8D2C890D8A4D6A9D39936 /* shared_realm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59F4FC27DC4D08DC2E5A169B4902C287 /* shared_realm.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		2DFC3B41A28B59A61A2A2D188D53C992 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F06E67E51E511949A566DEF33DF081 /* Schema.swift */; };
+		2E4E199475C8F370B170359FE4C96F8A /* NSString+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1DED58F5096365A0D43694D7BCBE19 /* NSString+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336ECDB07B28E7A53A30239FE77E4EDC /* RLMOptionalBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 310025C712CBF9016D5D1B919E15399F /* RLMOptionalBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		35EACCEBFB156D32CEEC1F7514DC152D /* RLMAnalytics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13D32D73A0C0E0601182F0F9C32F97D1 /* RLMAnalytics.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		36DD6D92AAE0E07FD4D8A5740BAAB961 /* CKCalendarViewModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6501A0D5837D9BBA78983F0CF9705AB4 /* CKCalendarViewModes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378DBD1747D81C3FFA37771840080220 /* CKCalendarViewControllerInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = AC98187C6226334E66386EAF238C5EEF /* CKCalendarViewControllerInternal.m */; };
+		38C65580311DAB066217D7D707134026 /* RLMSchema_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = FF6AE52AAEF1E9EA765D517E49FDF846 /* RLMSchema_Private.h */; };
+		3AD2E4AD7ED38729D73D54EE05F3F17E /* RLMMigration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8738179E926CD29006B593327AE01433 /* RLMMigration_Private.h */; };
+		3AE55E82853B5AD484B32F4B6DE12653 /* RLMCollection.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9E5B05927770105ED0FAC9683C70982D /* RLMCollection.h */; };
+		3B613C1EEE82A404D2182ED3E333EEBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		3B800B74F3422DF3A772E86FD7315DB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA622B3FA15861E0175E891996007A /* QuartzCore.framework */; };
+		3D9E0FCC0339FA7D36D764FE0065C89E /* RLMListBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95373D77CAFD0F49EB158F5D41CC89B8 /* RLMListBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		3FDE800EEBC32579FD668DEAE08DD390 /* schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F87DCF6049AB041915CFF12195F362D /* schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		40FEB2BAA5D262F59B509496E1FF33BB /* RLMListBase.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C132F8C2B1E6223C6CF6B165F96A8CE4 /* RLMListBase.h */; };
+		42C542D409E80CF0A34D015A63959C0C /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED64C25DF3858FF3C951EE074E664C1 /* NSCalendar+Components.m */; };
+		43D43C6B03F1AFCAD0E20D512D56C648 /* RLMArray_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 8AD524CB9D1E46480A397A0B773FB37A /* RLMArray_Private.h */; };
+		4425B32096175B9BF97568406A33FCC8 /* RLMListBase.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = C132F8C2B1E6223C6CF6B165F96A8CE4 /* RLMListBase.h */; };
+		47F9DA5CACA9465CEE89182E2E8ACA82 /* CKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BFB0F5C7E9584FABAEC5A52E4A02EF /* CKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		492257E8BE374C295CF13A79C3836DA0 /* object_schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D1F095F9915BEB5505508904E8A58A /* object_schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		4BBE311F8640C9D98445CC48EAB52F80 /* RLMSchema_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6AE52AAEF1E9EA765D517E49FDF846 /* RLMSchema_Private.h */; };
+		4C9417607F53076D0532C129544DEDBC /* RLMObjectSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = F13967EC89C4AF40F73F828451192500 /* RLMObjectSchema.h */; };
+		4E2E9423E0CCDED735E9E084B395A0CC /* CKCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9136DC6640DC5BEAA7C2F586F70F65DC /* CKCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F621027BA60CF98967289A5A2905277 /* RLMObject_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A05001F35DB0171F53B6F4AD0401C1BD /* RLMObject_Private.h */; };
+		5168A75F9CAD52A5C2334F892F62992E /* collection_change_builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 251F73D87D49744649E083C7ADD93911 /* collection_change_builder.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		531C73682C4FD2A126A9280E2C0EF4F4 /* RLMRealm.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8EBFD8B356E15DB0F9108725BD95A7A2 /* RLMRealm.h */; };
+		53C73C8F32889A8EB993D2FE53EE4FB6 /* MXLCalendarManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AC1612A2439C87B11336157C1F2E /* MXLCalendarManager-dummy.m */; };
+		53F2A47439C59D6D357AE07CDA4881C5 /* RLMObjectStore.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 0DE23D763D90C58696AF55E6C815A030 /* RLMObjectStore.h */; };
+		54B2B3BD62286F78F5C2A47D3CEA1DD9 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 923DDEDEBA167F395D59B62C4C165A67 /* NSCalendar+DateComparison.m */; };
+		550F04AFFE7BA1493A8403E3124FA3A5 /* RLMRealmConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70CBDF9E4BEE874B159E79C1C0210948 /* RLMRealmConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		553DAF40EA1A0A7C83B214E771876641 /* RLMObjectStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF8F1637211E76A98D2B918157FB1E76 /* RLMObjectStore.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		56416B3E306AB0DF8536859B1F2181AB /* RLMAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 065E9BAEEF8C34A3C066768BA08BA90F /* RLMAccessor.h */; };
+		56EBA79D7F990B524EED63673372CD55 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E0EBAFCE26F225E8D88848B9D98F5A /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5704B4E4829E8ECA64101D0D1304C98A /* CKCalendarMonthCellStates.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E83979763F2ED616B81927595169985 /* CKCalendarMonthCellStates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57B2671EAF23C208627759A5A1FC8601 /* MXLCalendarAttendee.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F100748141F8423078D85DFDC25690 /* MXLCalendarAttendee.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590686EFDD83D6EAC499E4A1410D6290 /* RLMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA6D611EF56221195B70E679D594757 /* RLMConstants.h */; };
+		591AA73229B3A3FDF4C38B940FBE46FB /* NSTimeZone+ProperAbbreviation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D02F049FA809FBC68DFC62C1317D27 /* NSTimeZone+ProperAbbreviation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4192359B922C7E3CB896294ED47863 /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A774D48B2C7C348A00B3DE52A9C4B733 /* NSDate+Description.m */; };
+		5BDB950E07FBB9D75FA706E6CD840EF4 /* RLMRealm_Dynamic.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DDF2610976516FA7F5F4187EAC2E5FCF /* RLMRealm_Dynamic.h */; };
+		5F62BE6A16D013F83F2FADEE04E3ACFB /* LinkingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111B918E842D56616D6A96A6E98A8548 /* LinkingObjects.swift */; };
+		6071C7828DC3B24A0FDCC8974EEE7526 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = EBADFBFC4732B809DC1D20B805390514 /* UIColor+HexString.m */; };
+		62894C8B02F277370CDBB953FFCCAA3E /* CKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7ABC78D7A734C4C71E2927E42E616 /* CKCalendarViewController.m */; };
+		655AF70881AE66945D8F9E89980DA1A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		66EF0B7B60D894AF6052C6BA75F99551 /* RLMOptionalBase.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = ADAA80F7EC50108A7C31D921CE1FF597 /* RLMOptionalBase.h */; };
+		6871039F2D333B92BCB561CCB9D926EB /* RLMResults.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7948E9BEE83104CE6F0C8A9E3DF964 /* RLMResults.h */; };
+		6AEC0FD5341B5FD2F276663C6D43EFD5 /* RLMRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBFD8B356E15DB0F9108725BD95A7A2 /* RLMRealm.h */; };
+		6BE496651D9345FA9F97ECD830D1334D /* RLMMigration_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 8738179E926CD29006B593327AE01433 /* RLMMigration_Private.h */; };
+		6C8884889A5126B5110DB75F0046C267 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AE47809CE06CF0E6E70527450D8AF9 /* NSCalendar+Juncture.m */; };
+		6C8AA4C386A9805DDDB2973AB99690E7 /* collection_notifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF86A2DFD36C6E97F0851A0CB9DA7A /* collection_notifications.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		6CCABE465451888868D4C6AAD6E22F33 /* RLMArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CCD9AD056F6C634901B2F00CAF4E5B /* RLMArray.h */; };
+		6D61067A20D17305B97071580D379717 /* CKCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C217D7A6798A21E094A24FDA6F1F812B /* CKCalendarCell.m */; };
+		6DD131F6208404EBF78627A183C3A213 /* object_store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B48C667E535445137A3CB48A8054FD19 /* object_store.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		7181763AEDCE2DED71FC463B11186CBF /* RLMCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5B05927770105ED0FAC9683C70982D /* RLMCollection.h */; };
+		7255314846A21BEB11498A7508C0CFE7 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 33868D253FDF12D58E599B8668F5C441 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		726A33389C89A07C100C21A7BF12D74B /* RLMObjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = EB73BFE268FAADCA4564F58130383206 /* RLMObjectBase.h */; };
+		7324B21AB9520EB8068A6358F5F86E6F /* RLMRealm.mm in Sources */ = {isa = PBXBuildFile; fileRef = B70A667318B38C049E077575CB0A7578 /* RLMRealm.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		73F78B59C790C2DBE402D7F56C822101 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDA47E289DEE8B1BFC95A3240E5C486 /* NSDateComponents+AllComponents.m */; };
+		7AA1C67DA46C14F0F621875160DCA6E3 /* MBPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1F186614F7EFEDA48F791AB90D997 /* MBPolygonView.m */; };
+		7AB8F6472F65388DA7238099F697BE6B /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA9D76A00A9DC7DD46C2D4F601E4567 /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B335A0623001927E6602F830803D237 /* RLMRealmUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FCE721259503AAAE2925D9B0BE665 /* RLMRealmUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		7CF1D6DD40BC0BCA45EF031CBCE4756D /* RLMUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16DA3BB0233ABBBF034C8EC791ABA88D /* RLMUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		7E95632CBC831A300FC1F0DDDF85FE96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		7EE1CB002C394BABFA19C35DA417BF3B /* RLMProperty_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 660ACC9CFBC761A670662CBB324B820A /* RLMProperty_Private.h */; };
+		7EF9E0BA7B7BFEEFA13DC64420F63C6D /* NSTimeZone+ProperAbbreviation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F43727DFC28EB4405D8DCD442E59BBC /* NSTimeZone+ProperAbbreviation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F324693EC25D8B8CB6ADD9AEFA0D018 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F67D031159EB2224675AE9EC904535 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8055B3085FCAC6145A512381D580CFA3 /* CKCalendarHeaderColors.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6DFD458C4D35025D9189E047874280 /* CKCalendarHeaderColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81958C39854060AFEDF9EFFC1A65A718 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EB3837726573E0FFCC0A9481009D3 /* Realm.framework */; };
+		877F88EB40E5A0174172E114503AFABA /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C63F7B6DAF383A827B00185974E2B015 /* SwiftyJSON-dummy.m */; };
+		89F86AC24553088DDE9375C555A4D3EB /* RLMResults_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BA47ECD20C3AE0FF07CB6FD55E42C1CD /* RLMResults_Private.h */; };
+		8AE2575858570154A0245421E6166450 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CEDAFC1A1D877DFA4AB0CF615B2925 /* NSDate+Components.m */; };
+		8CF01F01A84769BEA8FED6461B54E534 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F26172DA5C537858D6055AA6904088 /* Migration.swift */; };
+		8DDB2019D81FC84B792F61D1ED2BEA3E /* RLMSchema.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 744477258A60AA587D57806395432897 /* RLMSchema.h */; };
+		8DDF86267DBE115C9EEC842571313140 /* RLMObjectBase.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = EB73BFE268FAADCA4564F58130383206 /* RLMObjectBase.h */; };
+		8E94B640EFB423002A0528047CD2C3F2 /* collection_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6DFD4B1B269F80116812705B402A15 /* collection_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		963A6573BBD3CD6D249B56DC50EDD444 /* RLMRealmConfiguration_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 6D3B981A1AE4C1AD39677E46658D1315 /* RLMRealmConfiguration_Private.h */; };
+		968BB438AB7B06F31DF73DF46636EC57 /* RLMPlatform.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 2A4345995D9AAB5533935202791ADDFB /* RLMPlatform.h */; };
+		96C01812F5B9878918A50BBE4F97E674 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF21A3A423DFC4E87A38ADCF9FE6A33 /* NSString+Color.m */; };
+		96F25C089D9E8A1B87EBAB2C9A02057E /* RLMSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 744477258A60AA587D57806395432897 /* RLMSchema.h */; };
+		96FB532CBBD33F4661707A5EFC918A13 /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5379E066CA9BBE3E427B256F98E49A4F /* NSCalendar+DateManipulation.m */; };
+		986C7E592513609EBCC9EAE5F25613D6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC224D87EC434ED011B2143AC1CD3BA0 /* Util.swift */; };
+		9B36C2962CCF97C714A4BFE27C8AE787 /* RLMQueryUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0F761C44F3800C71FD3133647E4BB /* RLMQueryUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		9BE515D0A74E0DA565A74DF0D2280E3A /* RLMAccessor.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 065E9BAEEF8C34A3C066768BA08BA90F /* RLMAccessor.h */; };
+		9C136839B7DB00C75F4A6E6FC6B0B344 /* UIView+Border.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B81B788CDC4AF879F454D24C6D81469 /* UIView+Border.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C3C803997B10DC26459AE3C9E15B473 /* results.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2414A61AD77E63D98F03222031B94D59 /* results.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		A09FFAD7B79229F7C5EBE75D414D988B /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C99DA6397235FCA6EA0A21B38ABBDD /* Object.swift */; };
+		A1C766544965921C3E46CBCD0849ACD6 /* list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51C7D3D394F922E26CEEBD1E87358C7D /* list.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		A2DC7CDC07F6748B7716292F71BF91D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		A33BA775BF4F8961C90406EF95B0384F /* external_commit_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945EF2DAB3B18B653143ED4255644A3B /* external_commit_helper.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		A37FED8C9D980782AF20A99C02006D4A /* CKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3174EB02D38215EA77630DC3315B04F5 /* CKTableViewCell.m */; };
+		A4FFCC9DDD56F9E3C6D4915ED6FA822A /* MXLCalendarEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E1DF2508D019E8CEF1D8E59B2F28DFA3 /* MXLCalendarEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A51D847A245CDBFCCD9885ACC61D255F /* CKCalendarEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBEE66F3C90B0395936EC5CEB07E619 /* CKCalendarEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A536CAE492158A3DAE8D4C669FF12C40 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCC7356853BECFA36649664C8A381F /* Results.swift */; };
+		A5644F5C4211577BAC4DE744448A3549 /* RLMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFD5716B454A7D666700C0850CC0222 /* RLMObject.h */; };
+		A5E52C4868038AD7C03A7AAE40F4DF01 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06EDCC180C8ED4495EEAD29CFE27C7 /* Optional.swift */; };
+		A8844EC39D67B93693A1D912DB56E1CF /* RLMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE9507339171A1C1424645ED0166E957 /* RLMProperty.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		A928E161C070B7A3AA4362045EDAE848 /* Realm.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 6DB722E94870F1E81A5866C57BE9F45C /* Realm.h */; };
+		A9D65367A0761323F7B59E4B6AED649F /* RLMObjectSchema_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B782975394D4046A7A208D8DAD1334FE /* RLMObjectSchema_Private.h */; };
+		AA6B4F77DC30BBB678FCDFA65FD7D9F0 /* RLMListBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C132F8C2B1E6223C6CF6B165F96A8CE4 /* RLMListBase.h */; };
+		AB803DF9119C1D604017ED5BE2749213 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC2905657523707AA3380BECD53BDB /* Property.swift */; };
+		ADE07AAE3182720BCFFD774F29177C9E /* RLMConstants.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 2BA6D611EF56221195B70E679D594757 /* RLMConstants.h */; };
+		AEC750743381EC733ACDB76F1907F1A4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF1E2E17F6708F4C7DDDE812C3F198 /* SwiftyJSON.swift */; };
+		AEF4B2F6922AA6DA293B9A75F0B06EF8 /* RLMArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9604E28944093ACAB729075650760280 /* RLMArray.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		AF5DC894DBD5E1D57908A578126206EF /* MBPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BBBEBEB53257BCC836780AAC6DE01C /* MBPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA2C401DD26F39834C24A010992C37C /* MXLCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19C9D55EEBB6173ACD6CEEC99EE24F /* MXLCalendarEvent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B01E68C02CE86FAA4925EE7CA09C2011 /* RLMSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = D77082ECDE3E6A57DFE339420608D510 /* RLMSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		B124ADFBB96E4DFD35C458B2820CC22C /* CKCalendarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0EFD3FC8D8756A73C5FAA55626B7D1 /* CKCalendarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D9304644CA6E5C60770719234750BF /* RLMObject.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0EFD5716B454A7D666700C0850CC0222 /* RLMObject.h */; };
+		B3A80B35EF647780FE15EAFE6BDF9532 /* SwiftVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBBE3D1881D456674CF0B8869712CC /* SwiftVersion.swift */; };
+		B55AA2D78E63A5C32F610A4A119F52DD /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637039215FAEB9B00DBF00B662269452 /* SortDescriptor.swift */; };
+		B5AD934B46BB3AB1F18FF39674AEBC58 /* RLMPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4345995D9AAB5533935202791ADDFB /* RLMPlatform.h */; };
+		B852F00D08EE5D135C79F83B47B38782 /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 5335F94278E159781F6900FBF9B99AD2 /* NSDate+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA998BD3E76349D07667C94A2AE2F6F0 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD55DCF3E5DACFD9B84FB4FFBA6F4875 /* RLMMigration.h */; };
+		BAF2B03D5F722F4ECE011B0BEE303EBA /* MBCalendarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C109E8F01321EF4A72698B121032630 /* MBCalendarKit-dummy.m */; };
+		BDF6394B50D874A0CE81AC20E993AFD0 /* CKCalendarCellColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AB484B07F8498DAE1A304B20886160 /* CKCalendarCellColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF75E671807174103A39A492D067498 /* RLMProperty.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 59D2F7E953237B5CF008AC220B79C36E /* RLMProperty.h */; };
+		BE6AEEB2D521CA99949DA723D74CD52B /* RLMObject_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = A05001F35DB0171F53B6F4AD0401C1BD /* RLMObject_Private.h */; };
+		BE85ED3F5F400D2471BD20C34B6D56DF /* CalendarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 521F7B3710F0F2EA47345F003042FEA4 /* CalendarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0949D2FF08841F0BDEF7339AD2D5711 /* RLMRealmConfiguration.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 21C0F654B63D1BA8D73E7EDA687079B6 /* RLMRealmConfiguration.h */; };
+		C0DD046C85CD32FAD0B55DDAB8C6B7C6 /* CKCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B666AC49F67FD2713726330B6D4E3 /* CKCalendarEvent.m */; };
+		C316BACDCA6F686938DA8F378E7DC755 /* CKCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F63F951D760424482DC62C4C54E7814C /* CKCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4552CBDD36482A944A0998FDE92EC58 /* RLMObjectSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77E4AA795C6FFF062376FF7FEACDC310 /* RLMObjectSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		C4A7222427ABE6C4FB294993D71C1379 /* RLMCollection.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE329CFC2DEAC1FBAE316F1C90EF3677 /* RLMCollection.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		C503DEFCF6619D6AEE52417B7DA2B9B7 /* RealmCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85798CD8A376792F711F17540CEA8E8E /* RealmCollectionType.swift */; };
+		C8E55C1BA7B44E2C57F8D0858F780EEF /* RLMMigration.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7933460F0447EA849398F9B4020B156 /* RLMMigration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		CAADDE3B2712E4BA1C5D55311B2CECAE /* RLMRealmConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B981A1AE4C1AD39677E46658D1315 /* RLMRealmConfiguration_Private.h */; };
+		CB1399C6F5C45033C72E73CB3CEBBDBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */; };
+		CB6026C03108C31AE67B49957711E09A /* index_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 540FAE3C5624F54D9FFC84BECD48F1EB /* index_set.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		CC4BA177C80EECD44FEA9675E5E419CD /* Pods-bcpApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 627506542902FFD49E3332A4135636C2 /* Pods-bcpApp-dummy.m */; };
+		CDA8AFEED51CEF5C2A9BE80883CED787 /* RLMOptionalBase.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = ADAA80F7EC50108A7C31D921CE1FF597 /* RLMOptionalBase.h */; };
+		CDB8417FCD3F8F2D9188C40AEAC36138 /* RLMArray_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD524CB9D1E46480A397A0B773FB37A /* RLMArray_Private.h */; };
+		CE167F2E80E7CC0012CDDE86BDBC2617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58631104965E3449911F0222BF22D2E8 /* UIKit.framework */; };
+		CE6C88C19ECE4E2030D3255952149142 /* CKCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9B181E398D53EB07353D192AA91941 /* CKCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0EEA539E1C6FC0B7C1534FDD8DDE35B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DB23EA96721A35661D1962D07EF49 /* Error.swift */; };
+		D34D1C208968132D4A3732D157CF86B0 /* RLMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A1544F226FB9A0E2BBB21C26C197A70F /* RLMConstants.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		D5AC2EC8E0AECAE311F2297F2C1A7554 /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9541AA4226A1BA55A568D56D0A49D /* NSCalendar+Ranges.m */; };
+		DAB0D662E634AE7053E712EE8BED40F8 /* MXLCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE400647656B178E20074B9E15A29EA /* MXLCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC53F69140FE6186D3D2CA2C984EFAA7 /* CKCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 231F4FEBC92300C3DD915D3B780A2DBC /* CKCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD616374C7174AAE7BAD293B10DD2D59 /* MXLCalendarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 039CBE4D3B615EC0A81264B431A49CCE /* MXLCalendarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF251274988E5C0BA24A52A21703B85 /* NSCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = FADEB26594C8E053E38DC268D95FBE6D /* NSCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEBD8DC805CED9EE53A21E28CBE8E08F /* Realm.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB722E94870F1E81A5866C57BE9F45C /* Realm.h */; };
+		DF8D38FDB91EB234B338023342588097 /* MXLCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 512EE3A994AC5FADB35C7C42CBB165E4 /* MXLCalendarManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E36EED47268AFD896D10950873FDC2AC /* UIView+AnimatedFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D05B6080CF3406DCFA2DD0841C3E6 /* UIView+AnimatedFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3939610C96FECD7D6FF8B0F1C538F55 /* RLMMigration.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = CD55DCF3E5DACFD9B84FB4FFBA6F4875 /* RLMMigration.h */; };
+		E53B61E2C8CE3E98C26E3202AECB6606 /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = E9478C076C28FDCF21DD1E856DBA7A06 /* NSDate+Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6D4AF7926D0F1CCC79510267F8906A2 /* RLMProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D2F7E953237B5CF008AC220B79C36E /* RLMProperty.h */; };
+		E723E6FE06EC7EF903F955BA5FBBC12A /* CKCalendarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD958610188691D30A603190AF9AAB2 /* CKCalendarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8DDE3B7EA84BEED7197B815B637BFD2 /* RLMResults_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = BA47ECD20C3AE0FF07CB6FD55E42C1CD /* RLMResults_Private.h */; };
+		E9CC08A9E2A8FB041224F4680CFF717E /* RLMObjectBase_Dynamic.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = BB1D79DA9997175E9FD4D1B0D5828F44 /* RLMObjectBase_Dynamic.h */; };
+		EB76DB066000C7E2594BB02DF2875508 /* RLMObjectSchema_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = B782975394D4046A7A208D8DAD1334FE /* RLMObjectSchema_Private.h */; };
+		EB8B25AE655AB3371D6C4E4E510F1064 /* weak_realm_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E40911A2EA0AE335F737EB6943F8B9E /* weak_realm_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		EBD0FCC86565974AFF2CFBF328F7C9D4 /* MXLCalendarAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8710A0F2A27C1C42A0C5551BCBB1 /* MXLCalendarAttendee.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ECAD298DF9DE77EE7FB6AD27C6B20EC0 /* RLMArray.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 20CCD9AD056F6C634901B2F00CAF4E5B /* RLMArray.h */; };
+		ECC406A55A9DB7DEDE8B712B73044F2B /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 0597D790CB731BF2B25B6AC4AA7AB320 /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC8EFC7D9AC2B00179947686639E26F /* CKCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6BF8DE58E16B202AE125B9450220E /* CKCalendarHeaderView.m */; };
+		EF077C77F49D15AD3E4ABAD6FBA1B7F3 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A36406F3EF128C986AD82FCF8CAC0C23 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F02553ACC93C62056FE7BBF34511DE0D /* Realm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E7F69AB797DF2485526E3629581CB /* Realm-dummy.m */; };
+		F3060DE01D37929E2E075D680FB6751B /* UIView+AnimatedFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6043C7EF14B7FC03C866525EE692D /* UIView+AnimatedFrame.m */; };
+		F3E64B63985DCFC8BE96E2770DA1E20D /* RLMRealm_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF2610976516FA7F5F4187EAC2E5FCF /* RLMRealm_Dynamic.h */; };
+		F480281DBCCCC6C49BFD241D182BB1ED /* RLMResults.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3F7948E9BEE83104CE6F0C8A9E3DF964 /* RLMResults.h */; };
+		F74F97A009F990266E68767D788E1362 /* transact_log_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27B64126FF260426207C0D96C6E12F9D /* transact_log_handler.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		F7DD6928349D4466D1C6BCFCA02A5E4C /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F27CFDADEA55E5DEE72DCD1430E34BD /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7F3B456B9918CB769C0EEAE6F1D9416 /* MXLCalendarManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE1B4788D26FAF6B36EA781139A289E /* MXLCalendarManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F87A05FFD7BE1334B599C14C6CC72AE3 /* RLMArrayLinkView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A12968C67A5E360C3AD7282C4F626F /* RLMArrayLinkView.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		F8BB5387868E37D03D1BB7B1A06F11F1 /* RLMObjectBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52F2261190C1F4E7B1F738441967734D /* RLMObjectBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		FB8CED8240500B69C095D149002560EA /* RLMUpdateChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F71140D14E61AF38A42859FBAC423B80 /* RLMUpdateChecker.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
+		FC29CD8147F040D29752F6D0558265B8 /* Pods-bcpApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AC0AEB58E88100032FEA24850AABA0 /* Pods-bcpApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB23D1A167AF2056C44A64DD02C15FB /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BD45B8A1C8D4197BB0A929DAA1E6AE /* UIView+Border.m */; };
+		FD9C9DFE50646697833CAFB49865CBDB /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B951099195F6294966CF0C2FEF1E78 /* List.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01F85ADD38836BB1FA8516B5F8C9CB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6956D30B9960F888F0EA557438C78EEE;
+			remoteInfo = SwiftyJSON;
+		};
+		0D4DD3B208736EC3C765139E32AE1458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D6D846448A0909A41B315C4A3207D22;
+			remoteInfo = Realm;
+		};
+		584FA03BDBCCB68097D9637D01876BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F896F7E0CD8C1DFFD7E1D2A78336902B;
+			remoteInfo = MXLCalendarManager;
+		};
+		6B3CD4E95779970AD92ABA15AFF1980F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53957E508FFF045AC0597A70600E3B6;
+			remoteInfo = MBCalendarKit;
+		};
+		E1236E2A2D78A9949514611420207269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D6D846448A0909A41B315C4A3207D22;
+			remoteInfo = Realm;
+		};
+		EACF176BDA1A66A6FCDA0253A0D36EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AF86E066C4FB1A1439E31021A8769A9;
+			remoteInfo = RealmSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D62B1DA8C6524199435F323EFD37F02 /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				A928E161C070B7A3AA4362045EDAE848 /* Realm.h in Copy . Public Headers */,
+				ECAD298DF9DE77EE7FB6AD27C6B20EC0 /* RLMArray.h in Copy . Public Headers */,
+				3AE55E82853B5AD484B32F4B6DE12653 /* RLMCollection.h in Copy . Public Headers */,
+				ADE07AAE3182720BCFFD774F29177C9E /* RLMConstants.h in Copy . Public Headers */,
+				40FEB2BAA5D262F59B509496E1FF33BB /* RLMListBase.h in Copy . Public Headers */,
+				E3939610C96FECD7D6FF8B0F1C538F55 /* RLMMigration.h in Copy . Public Headers */,
+				B1D9304644CA6E5C60770719234750BF /* RLMObject.h in Copy . Public Headers */,
+				8DDF86267DBE115C9EEC842571313140 /* RLMObjectBase.h in Copy . Public Headers */,
+				E9CC08A9E2A8FB041224F4680CFF717E /* RLMObjectBase_Dynamic.h in Copy . Public Headers */,
+				2229D922AEC6D93F226E726D64041A8B /* RLMObjectSchema.h in Copy . Public Headers */,
+				66EF0B7B60D894AF6052C6BA75F99551 /* RLMOptionalBase.h in Copy . Public Headers */,
+				968BB438AB7B06F31DF73DF46636EC57 /* RLMPlatform.h in Copy . Public Headers */,
+				BDF75E671807174103A39A492D067498 /* RLMProperty.h in Copy . Public Headers */,
+				531C73682C4FD2A126A9280E2C0EF4F4 /* RLMRealm.h in Copy . Public Headers */,
+				5BDB950E07FBB9D75FA706E6CD840EF4 /* RLMRealm_Dynamic.h in Copy . Public Headers */,
+				C0949D2FF08841F0BDEF7339AD2D5711 /* RLMRealmConfiguration.h in Copy . Public Headers */,
+				F480281DBCCCC6C49BFD241D182BB1ED /* RLMResults.h in Copy . Public Headers */,
+				8DDB2019D81FC84B792F61D1ED2BEA3E /* RLMSchema.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F4F39508E7261C393A3CD4CBD915A0 /* Copy . Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				9BE515D0A74E0DA565A74DF0D2280E3A /* RLMAccessor.h in Copy . Private Headers */,
+				43D43C6B03F1AFCAD0E20D512D56C648 /* RLMArray_Private.h in Copy . Private Headers */,
+				4425B32096175B9BF97568406A33FCC8 /* RLMListBase.h in Copy . Private Headers */,
+				6BE496651D9345FA9F97ECD830D1334D /* RLMMigration_Private.h in Copy . Private Headers */,
+				BE6AEEB2D521CA99949DA723D74CD52B /* RLMObject_Private.h in Copy . Private Headers */,
+				EB76DB066000C7E2594BB02DF2875508 /* RLMObjectSchema_Private.h in Copy . Private Headers */,
+				53F2A47439C59D6D357AE07CDA4881C5 /* RLMObjectStore.h in Copy . Private Headers */,
+				CDA8AFEED51CEF5C2A9BE80883CED787 /* RLMOptionalBase.h in Copy . Private Headers */,
+				25174377DB547F63924308697641B5E4 /* RLMProperty_Private.h in Copy . Private Headers */,
+				200ED816C798B965E2085A6B73DDF0F2 /* RLMRealm_Private.h in Copy . Private Headers */,
+				963A6573BBD3CD6D249B56DC50EDD444 /* RLMRealmConfiguration_Private.h in Copy . Private Headers */,
+				E8DDE3B7EA84BEED7197B815B637BFD2 /* RLMResults_Private.h in Copy . Private Headers */,
+				38C65580311DAB066217D7D707134026 /* RLMSchema_Private.h in Copy . Private Headers */,
+			);
+			name = "Copy . Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		039CBE4D3B615EC0A81264B431A49CCE /* MXLCalendarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXLCalendarManager.h; path = MXLCalendarManager/MXLCalendarManager.h; sourceTree = "<group>"; };
+		0597D790CB731BF2B25B6AC4AA7AB320 /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Ranges.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.h"; sourceTree = "<group>"; };
+		065E9BAEEF8C34A3C066768BA08BA90F /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
+		07A8AC37F4D7F21A459F6E8A16C5F3AA /* RLMRealm_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Private.h; path = include/RLMRealm_Private.h; sourceTree = "<group>"; };
+		09329E78C6CD7D78FDC97523E08CFB5F /* MBCalendarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCalendarKit.xcconfig; sourceTree = "<group>"; };
+		0A06EDCC180C8ED4495EEAD29CFE27C7 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RealmSwift/Optional.swift; sourceTree = "<group>"; };
+		0B53AFF0811020472F3ADFD8E3CE115D /* Pods-bcpApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bcpApp-frameworks.sh"; sourceTree = "<group>"; };
+		0B7D62DE3125F7776B750FA29AD3D71B /* Realm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Realm.modulemap; sourceTree = "<group>"; };
+		0DE23D763D90C58696AF55E6C815A030 /* RLMObjectStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectStore.h; path = include/RLMObjectStore.h; sourceTree = "<group>"; };
+		0E1692C29D19D068C1CD18985367301D /* RealmConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmConfiguration.swift; path = RealmSwift/RealmConfiguration.swift; sourceTree = "<group>"; };
+		0EFD5716B454A7D666700C0850CC0222 /* RLMObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject.h; path = include/RLMObject.h; sourceTree = "<group>"; };
+		111B918E842D56616D6A96A6E98A8548 /* LinkingObjects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkingObjects.swift; path = RealmSwift/LinkingObjects.swift; sourceTree = "<group>"; };
+		12E0EBAFCE26F225E8D88848B9D98F5A /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateComparison.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.h"; sourceTree = "<group>"; };
+		13D32D73A0C0E0601182F0F9C32F97D1 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
+		16DA3BB0233ABBBF034C8EC791ABA88D /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
+		17BBBEBEB53257BCC836780AAC6DE01C /* MBPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPolygonView.h; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.h; sourceTree = "<group>"; };
+		1872AC09145BAAE05CE161D53DA70718 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
+		1BA6F12BB655D0F6FA1AAC6B22988AC8 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		1BD958610188691D30A603190AF9AAB2 /* CKCalendarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewController.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.h"; sourceTree = "<group>"; };
+		1C109E8F01321EF4A72698B121032630 /* MBCalendarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCalendarKit-dummy.m"; sourceTree = "<group>"; };
+		1CF21A3A423DFC4E87A38ADCF9FE6A33 /* NSString+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.m"; sourceTree = "<group>"; };
+		1D3748736EFDEB99A2B15A9EB2AEC014 /* RealmSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RealmSwift.modulemap; sourceTree = "<group>"; };
+		1E83979763F2ED616B81927595169985 /* CKCalendarMonthCellStates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarMonthCellStates.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarMonthCellStates.h; sourceTree = "<group>"; };
+		1EAF86A2DFD36C6E97F0851A0CB9DA7A /* collection_notifications.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_notifications.cpp; path = Realm/ObjectStore/collection_notifications.cpp; sourceTree = "<group>"; };
+		20C4EC953FDE22527098C94EE0FBC356 /* results_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = results_notifier.cpp; path = Realm/ObjectStore/impl/results_notifier.cpp; sourceTree = "<group>"; };
+		20CCD9AD056F6C634901B2F00CAF4E5B /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
+		21C0F654B63D1BA8D73E7EDA687079B6 /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
+		21C186EF8C0FD3A9BCADC4AE0DFFF32F /* RealmSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealmSwift-dummy.m"; sourceTree = "<group>"; };
+		231F4FEBC92300C3DD915D3B780A2DBC /* CKCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.h; sourceTree = "<group>"; };
+		2414A61AD77E63D98F03222031B94D59 /* results.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = results.cpp; path = Realm/ObjectStore/results.cpp; sourceTree = "<group>"; };
+		241DB23EA96721A35661D1962D07EF49 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = RealmSwift/Error.swift; sourceTree = "<group>"; };
+		246EB3837726573E0FFCC0A9481009D3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251F73D87D49744649E083C7ADD93911 /* collection_change_builder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_change_builder.cpp; path = Realm/ObjectStore/impl/collection_change_builder.cpp; sourceTree = "<group>"; };
+		2605A1A3320638622D6D88C719304488 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		27B64126FF260426207C0D96C6E12F9D /* transact_log_handler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = transact_log_handler.cpp; path = Realm/ObjectStore/impl/transact_log_handler.cpp; sourceTree = "<group>"; };
+		27BFB0F5C7E9584FABAEC5A52E4A02EF /* CKTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKTableViewCell.h; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.h; sourceTree = "<group>"; };
+		2A4345995D9AAB5533935202791ADDFB /* RLMPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMPlatform.h; path = include/RLMPlatform.h; sourceTree = "<group>"; };
+		2BA6D611EF56221195B70E679D594757 /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
+		2CF3AC1612A2439C87B11336157C1F2E /* MXLCalendarManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXLCalendarManager-dummy.m"; sourceTree = "<group>"; };
+		2F27CFDADEA55E5DEE72DCD1430E34BD /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.h"; sourceTree = "<group>"; };
+		310025C712CBF9016D5D1B919E15399F /* RLMOptionalBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMOptionalBase.mm; path = Realm/RLMOptionalBase.mm; sourceTree = "<group>"; };
+		3174EB02D38215EA77630DC3315B04F5 /* CKTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKTableViewCell.m; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.m; sourceTree = "<group>"; };
+		32FF861BA0DFC6DADA3AAE830A927FB8 /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
+		337C39C3751CF3B817003235C3C5FA00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33868D253FDF12D58E599B8668F5C441 /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateComponents+AllComponents.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
+		35F1556847916244E7F8E3BB2502DD57 /* MXLCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXLCalendar.m; path = MXLCalendarManager/MXLCalendar.m; sourceTree = "<group>"; };
+		38BD45B8A1C8D4197BB0A929DAA1E6AE /* UIView+Border.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Border.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.m"; sourceTree = "<group>"; };
+		3CF89AE4C03D2928A8AB5426A7B30E2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2B4586FD0BA386AA91D0D9EA210DE6 /* Pods-bcpApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-bcpApp.modulemap"; sourceTree = "<group>"; };
+		3EB606FB25AA9A331FA2391F8EE8FDD2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		3EDE811A53D20C77D593FC114656C23A /* Pods_bcpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bcpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7948E9BEE83104CE6F0C8A9E3DF964 /* RLMResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults.h; path = include/RLMResults.h; sourceTree = "<group>"; };
+		3F87DCF6049AB041915CFF12195F362D /* schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = schema.cpp; path = Realm/ObjectStore/schema.cpp; sourceTree = "<group>"; };
+		41AC0AEB58E88100032FEA24850AABA0 /* Pods-bcpApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-bcpApp-umbrella.h"; sourceTree = "<group>"; };
+		44F100748141F8423078D85DFDC25690 /* MXLCalendarAttendee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXLCalendarAttendee.h; path = MXLCalendarManager/MXLCalendarAttendee.h; sourceTree = "<group>"; };
+		47991107916D4EDA5F846FF09FE3A3B8 /* NSCalendar+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.h"; sourceTree = "<group>"; };
+		4B3C3B926ACBBCC78162857B1FA3F1B3 /* Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = RealmSwift/Aliases.swift; sourceTree = "<group>"; };
+		4B5FCE721259503AAAE2925D9B0BE665 /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
+		4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D5C93599A252E35D60027DEB61B4522 /* ObjectSchema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectSchema.swift; path = RealmSwift/ObjectSchema.swift; sourceTree = "<group>"; };
+		4E9ABA85030A05B10D8BA8EAF5C53060 /* Pods-bcpApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bcpApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50A886653BF7F44C9F726D6900F02BDE /* list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = list_notifier.cpp; path = Realm/ObjectStore/impl/list_notifier.cpp; sourceTree = "<group>"; };
+		50C99DA6397235FCA6EA0A21B38ABBDD /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Object.swift; path = RealmSwift/Object.swift; sourceTree = "<group>"; };
+		512EE3A994AC5FADB35C7C42CBB165E4 /* MXLCalendarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXLCalendarManager.m; path = MXLCalendarManager/MXLCalendarManager.m; sourceTree = "<group>"; };
+		51C7D3D394F922E26CEEBD1E87358C7D /* list.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = list.cpp; path = Realm/ObjectStore/list.cpp; sourceTree = "<group>"; };
+		51F26172DA5C537858D6055AA6904088 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = RealmSwift/Migration.swift; sourceTree = "<group>"; };
+		521F7B3710F0F2EA47345F003042FEA4 /* CalendarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CalendarKit.h; path = MBCalendarKit/CalendarKit/CalendarKit.h; sourceTree = "<group>"; };
+		52F2261190C1F4E7B1F738441967734D /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
+		5335F94278E159781F6900FBF9B99AD2 /* NSDate+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.h"; sourceTree = "<group>"; };
+		5379E066CA9BBE3E427B256F98E49A4F /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateManipulation.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
+		5386A9000B089443581E84A1E983AA8D /* MBCalendarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-umbrella.h"; sourceTree = "<group>"; };
+		53FC13B1404A87D3F34F642A558255FA /* Pods-bcpApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bcpApp-resources.sh"; sourceTree = "<group>"; };
+		540FAE3C5624F54D9FFC84BECD48F1EB /* index_set.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = index_set.cpp; path = Realm/ObjectStore/index_set.cpp; sourceTree = "<group>"; };
+		55B7ABC78D7A734C4C71E2927E42E616 /* CKCalendarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewController.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.m"; sourceTree = "<group>"; };
+		57BBDA1BB76DE88A0095E44374099A5F /* Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Realm-prefix.pch"; sourceTree = "<group>"; };
+		58631104965E3449911F0222BF22D2E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		58987C824088092DCC17F6F9DF7F2ADF /* RealmSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-umbrella.h"; sourceTree = "<group>"; };
+		59A12968C67A5E360C3AD7282C4F626F /* RLMArrayLinkView.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMArrayLinkView.mm; path = Realm/RLMArrayLinkView.mm; sourceTree = "<group>"; };
+		59D2F7E953237B5CF008AC220B79C36E /* RLMProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty.h; path = include/RLMProperty.h; sourceTree = "<group>"; };
+		59F4FC27DC4D08DC2E5A169B4902C287 /* shared_realm.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = shared_realm.cpp; path = Realm/ObjectStore/shared_realm.cpp; sourceTree = "<group>"; };
+		5ACBBE3D1881D456674CF0B8869712CC /* SwiftVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftVersion.swift; path = RealmSwift/SwiftVersion.swift; sourceTree = "<group>"; };
+		5ECCC7356853BECFA36649664C8A381F /* Results.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Results.swift; path = RealmSwift/Results.swift; sourceTree = "<group>"; };
+		5ED64C25DF3858FF3C951EE074E664C1 /* NSCalendar+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.m"; sourceTree = "<group>"; };
+		5F43727DFC28EB4405D8DCD442E59BBC /* NSTimeZone+ProperAbbreviation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimeZone+ProperAbbreviation.m"; path = "MXLCalendarManager/NSTimeZone+ProperAbbreviation.m"; sourceTree = "<group>"; };
+		60F7F23AC16CE2177DBCFA4CBA3260C7 /* RealmSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-prefix.pch"; sourceTree = "<group>"; };
+		627506542902FFD49E3332A4135636C2 /* Pods-bcpApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bcpApp-dummy.m"; sourceTree = "<group>"; };
+		637039215FAEB9B00DBF00B662269452 /* SortDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortDescriptor.swift; path = RealmSwift/SortDescriptor.swift; sourceTree = "<group>"; };
+		6501A0D5837D9BBA78983F0CF9705AB4 /* CKCalendarViewModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewModes.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarViewModes.h; sourceTree = "<group>"; };
+		660ACC9CFBC761A670662CBB324B820A /* RLMProperty_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty_Private.h; path = include/RLMProperty_Private.h; sourceTree = "<group>"; };
+		66D1F095F9915BEB5505508904E8A58A /* object_schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = object_schema.cpp; path = Realm/ObjectStore/object_schema.cpp; sourceTree = "<group>"; };
+		6A1DED58F5096365A0D43694D7BCBE19 /* NSString+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.h"; sourceTree = "<group>"; };
+		6D3B981A1AE4C1AD39677E46658D1315 /* RLMRealmConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration_Private.h; path = include/RLMRealmConfiguration_Private.h; sourceTree = "<group>"; };
+		6DB722E94870F1E81A5866C57BE9F45C /* Realm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Realm.h; path = include/Realm.h; sourceTree = "<group>"; };
+		6EB0F761C44F3800C71FD3133647E4BB /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
+		6F522F1B512AC3EF3F356EA9F095825A /* realm_coordinator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = realm_coordinator.cpp; path = Realm/ObjectStore/impl/realm_coordinator.cpp; sourceTree = "<group>"; };
+		70CBDF9E4BEE874B159E79C1C0210948 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
+		71D02F049FA809FBC68DFC62C1317D27 /* NSTimeZone+ProperAbbreviation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimeZone+ProperAbbreviation.h"; path = "MXLCalendarManager/NSTimeZone+ProperAbbreviation.h"; sourceTree = "<group>"; };
+		744477258A60AA587D57806395432897 /* RLMSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema.h; path = include/RLMSchema.h; sourceTree = "<group>"; };
+		77E4AA795C6FFF062376FF7FEACDC310 /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
+		7A1B8710A0F2A27C1C42A0C5551BCBB1 /* MXLCalendarAttendee.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXLCalendarAttendee.m; path = MXLCalendarManager/MXLCalendarAttendee.m; sourceTree = "<group>"; };
+		7CAFEB4BA7640D869F664E4B1482E383 /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
+		7E390C510B45FDAF82663D49A60036CB /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
+		7E6183437811602B83BBE1FEDFDF0301 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
+		80651576865BDCBB15F2D94E514FC6DB /* MXLCalendarManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MXLCalendarManager.modulemap; sourceTree = "<group>"; };
+		80AB484B07F8498DAE1A304B20886160 /* CKCalendarCellColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarCellColors.h; sourceTree = "<group>"; };
+		80CE927DC5C90F1431BBDC9F0F728B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841435C9106C50275AB9B844A86E5003 /* Realm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.xcconfig; sourceTree = "<group>"; };
+		85798CD8A376792F711F17540CEA8E8E /* RealmCollectionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmCollectionType.swift; path = RealmSwift/RealmCollectionType.swift; sourceTree = "<group>"; };
+		8738179E926CD29006B593327AE01433 /* RLMMigration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration_Private.h; path = include/RLMMigration_Private.h; sourceTree = "<group>"; };
+		88F06E67E51E511949A566DEF33DF081 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = RealmSwift/Schema.swift; sourceTree = "<group>"; };
+		8AD524CB9D1E46480A397A0B773FB37A /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
+		8B81B788CDC4AF879F454D24C6D81469 /* UIView+Border.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Border.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.h"; sourceTree = "<group>"; };
+		8EBFD8B356E15DB0F9108725BD95A7A2 /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
+		9136DC6640DC5BEAA7C2F586F70F65DC /* CKCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCell.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.h; sourceTree = "<group>"; };
+		923DDEDEBA167F395D59B62C4C165A67 /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateComparison.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93CEDAFC1A1D877DFA4AB0CF615B2925 /* NSDate+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.m"; sourceTree = "<group>"; };
+		945EF2DAB3B18B653143ED4255644A3B /* external_commit_helper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = external_commit_helper.cpp; path = Realm/ObjectStore/impl/apple/external_commit_helper.cpp; sourceTree = "<group>"; };
+		95373D77CAFD0F49EB158F5D41CC89B8 /* RLMListBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMListBase.mm; path = Realm/RLMListBase.mm; sourceTree = "<group>"; };
+		95BC2905657523707AA3380BECD53BDB /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
+		9604E28944093ACAB729075650760280 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
+		9BD46A392BB13E9DDFEC2D0985B56D5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E40911A2EA0AE335F737EB6943F8B9E /* weak_realm_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = weak_realm_notifier.cpp; path = Realm/ObjectStore/impl/apple/weak_realm_notifier.cpp; sourceTree = "<group>"; };
+		9E5B05927770105ED0FAC9683C70982D /* RLMCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection.h; path = include/RLMCollection.h; sourceTree = "<group>"; };
+		A0348ADFEDEDAD1821F3E537772D4E41 /* CKCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.m; sourceTree = "<group>"; };
+		A05001F35DB0171F53B6F4AD0401C1BD /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/RLMObject_Private.h; sourceTree = "<group>"; };
+		A1544F226FB9A0E2BBB21C26C197A70F /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
+		A36406F3EF128C986AD82FCF8CAC0C23 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		A774D48B2C7C348A00B3DE52A9C4B733 /* NSDate+Description.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Description.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.m"; sourceTree = "<group>"; };
+		A855689EF28D4F88882C3860485EF120 /* MXLCalendarManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXLCalendarManager-prefix.pch"; sourceTree = "<group>"; };
+		AAE400647656B178E20074B9E15A29EA /* MXLCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXLCalendar.h; path = MXLCalendarManager/MXLCalendar.h; sourceTree = "<group>"; };
+		ABBEE66F3C90B0395936EC5CEB07E619 /* CKCalendarEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarEvent.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.h; sourceTree = "<group>"; };
+		AC1B666AC49F67FD2713726330B6D4E3 /* CKCalendarEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarEvent.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.m; sourceTree = "<group>"; };
+		AC4984D2F32EBC4109B0F4CF006B5943 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC98187C6226334E66386EAF238C5EEF /* CKCalendarViewControllerInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewControllerInternal.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.m"; sourceTree = "<group>"; };
+		ADAA80F7EC50108A7C31D921CE1FF597 /* RLMOptionalBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMOptionalBase.h; path = include/RLMOptionalBase.h; sourceTree = "<group>"; };
+		AE329CFC2DEAC1FBAE316F1C90EF3677 /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
+		AF936BEFA82DC11FAF281DEC2D851BE0 /* MBCalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBCalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA9D76A00A9DC7DD46C2D4F601E4567 /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Juncture.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.h"; sourceTree = "<group>"; };
+		B021D502BF43C5903FB433E8510ADCF4 /* Pods-bcpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bcpApp.release.xcconfig"; sourceTree = "<group>"; };
+		B48C667E535445137A3CB48A8054FD19 /* object_store.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = object_store.cpp; path = Realm/ObjectStore/object_store.cpp; sourceTree = "<group>"; };
+		B6CAE1C5DF28FFE24D87E79636134CCB /* format.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = format.cpp; path = Realm/ObjectStore/util/format.cpp; sourceTree = "<group>"; };
+		B70A667318B38C049E077575CB0A7578 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
+		B782975394D4046A7A208D8DAD1334FE /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema_Private.h; path = include/RLMObjectSchema_Private.h; sourceTree = "<group>"; };
+		B7933460F0447EA849398F9B4020B156 /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
+		BA0AE2AAA0E55211AB4A7F133C99AD35 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA47ECD20C3AE0FF07CB6FD55E42C1CD /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
+		BB1D79DA9997175E9FD4D1B0D5828F44 /* RLMObjectBase_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Dynamic.h; path = include/RLMObjectBase_Dynamic.h; sourceTree = "<group>"; };
+		BC0D05B6080CF3406DCFA2DD0841C3E6 /* UIView+AnimatedFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnimatedFrame.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.h"; sourceTree = "<group>"; };
+		BE6DFD458C4D35025D9189E047874280 /* CKCalendarHeaderColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarHeaderColors.h; sourceTree = "<group>"; };
+		BFE1B4788D26FAF6B36EA781139A289E /* MXLCalendarManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXLCalendarManager-umbrella.h"; sourceTree = "<group>"; };
+		C132F8C2B1E6223C6CF6B165F96A8CE4 /* RLMListBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMListBase.h; path = include/RLMListBase.h; sourceTree = "<group>"; };
+		C217D7A6798A21E094A24FDA6F1F812B /* CKCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarCell.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.m; sourceTree = "<group>"; };
+		C34211F8F9B8CE548E2ABDAA21F4D6BB /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
+		C4F67D031159EB2224675AE9EC904535 /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateManipulation.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
+		C5DF1E2E17F6708F4C7DDDE812C3F198 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C63F7B6DAF383A827B00185974E2B015 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		C8AE47809CE06CF0E6E70527450D8AF9 /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Juncture.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m"; sourceTree = "<group>"; };
+		C8D6BF8DE58E16B202AE125B9450220E /* CKCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarHeaderView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.m; sourceTree = "<group>"; };
+		CA0EFD3FC8D8756A73C5FAA55626B7D1 /* CKCalendarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDelegate.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDelegate.h; sourceTree = "<group>"; };
+		CA54B630FFA873038CFFBB36C9871931 /* MBCalendarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-prefix.pch"; sourceTree = "<group>"; };
+		CD55DCF3E5DACFD9B84FB4FFBA6F4875 /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
+		CD9B181E398D53EB07353D192AA91941 /* CKCalendarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.h; sourceTree = "<group>"; };
+		D0C9541AA4226A1BA55A568D56D0A49D /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Ranges.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m"; sourceTree = "<group>"; };
+		D4BA622B3FA15861E0175E891996007A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D77082ECDE3E6A57DFE339420608D510 /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
+		DC224D87EC434ED011B2143AC1CD3BA0 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = RealmSwift/Util.swift; sourceTree = "<group>"; };
+		DDF2610976516FA7F5F4187EAC2E5FCF /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
+		DE6DFD4B1B269F80116812705B402A15 /* collection_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_notifier.cpp; path = Realm/ObjectStore/impl/collection_notifier.cpp; sourceTree = "<group>"; };
+		DEDA47E289DEE8B1BFC95A3240E5C486 /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+AllComponents.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
+		DF3E84DB487A0B0C11E7B675AB4E53A6 /* CKCalendarViewControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewControllerInternal.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.h"; sourceTree = "<group>"; };
+		DF49B1D59FDC461E216710BFD375CA8E /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
+		DFB6043C7EF14B7FC03C866525EE692D /* UIView+AnimatedFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnimatedFrame.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.m"; sourceTree = "<group>"; };
+		E009C74CD88EFF4F3BC9388062B5B335 /* Pods-bcpApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bcpApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1DF2508D019E8CEF1D8E59B2F28DFA3 /* MXLCalendarEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXLCalendarEvent.h; path = MXLCalendarManager/MXLCalendarEvent.h; sourceTree = "<group>"; };
+		E6E1F186614F7EFEDA48F791AB90D997 /* MBPolygonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPolygonView.m; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.m; sourceTree = "<group>"; };
+		E857D72A50A650556F9A2A22AE46EABD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9478C076C28FDCF21DD1E856DBA7A06 /* NSDate+Description.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Description.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.h"; sourceTree = "<group>"; };
+		EB19C9D55EEBB6173ACD6CEEC99EE24F /* MXLCalendarEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXLCalendarEvent.m; path = MXLCalendarManager/MXLCalendarEvent.m; sourceTree = "<group>"; };
+		EB73BFE268FAADCA4564F58130383206 /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
+		EBADFBFC4732B809DC1D20B805390514 /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.m"; sourceTree = "<group>"; };
+		EC8AB4ADDA6B40F9F6A90271F6AF6E96 /* Pods-bcpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bcpApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9507339171A1C1424645ED0166E957 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
+		F13967EC89C4AF40F73F828451192500 /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
+		F1867B9C56727FF9652D737E4ADB66BA /* librealm-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "librealm-ios.a"; path = "core/librealm-ios.a"; sourceTree = "<group>"; };
+		F5AAC87F81B655422B336EEFCA8324B4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63F951D760424482DC62C4C54E7814C /* CKCalendarDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDataSource.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDataSource.h; sourceTree = "<group>"; };
+		F71140D14E61AF38A42859FBAC423B80 /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
+		F90007F4A3344676C72810B0CFC2D067 /* MXLCalendarManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXLCalendarManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90702E6433BBB413D0828B93AB5C08B /* MBCalendarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBCalendarKit.modulemap; sourceTree = "<group>"; };
+		F9B5FA807EE6648756295910F74486B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B951099195F6294966CF0C2FEF1E78 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = RealmSwift/List.swift; sourceTree = "<group>"; };
+		F9D6528B8B413C672C90298554AD8FB9 /* RealmSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealmSwift.xcconfig; sourceTree = "<group>"; };
+		FADEB26594C8E053E38DC268D95FBE6D /* NSCalendarCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCalendarCategories.h; path = MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendarCategories.h; sourceTree = "<group>"; };
+		FF20B70752D8895E1379488578C7AFE6 /* MXLCalendarManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXLCalendarManager.xcconfig; sourceTree = "<group>"; };
+		FF6AE52AAEF1E9EA765D517E49FDF846 /* RLMSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema_Private.h; path = include/RLMSchema_Private.h; sourceTree = "<group>"; };
+		FF8E7F69AB797DF2485526E3629581CB /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
+		FF8F1637211E76A98D2B918157FB1E76 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AA20B1CA21B342F13914D41103CCB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B613C1EEE82A404D2182ED3E333EEBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFE3A4D66666F40EF5D27D4478EBAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1399C6F5C45033C72E73CB3CEBBDBE /* Foundation.framework in Frameworks */,
+				3B800B74F3422DF3A772E86FD7315DB9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE2BECC9AA2032CE012763DEA20FE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655AF70881AE66945D8F9E89980DA1A5 /* Foundation.framework in Frameworks */,
+				81958C39854060AFEDF9EFFC1A65A718 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14257A1AFAD685F54B11C7FA52B1426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DC7CDC07F6748B7716292F71BF91D8 /* Foundation.framework in Frameworks */,
+				CE167F2E80E7CC0012CDDE86BDBC2617 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA664B5973F2AB1E35294771E0491047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E95632CBC831A300FC1F0DDDF85FE96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50B2A1AD6E96C28DEA52A3819A08F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0088F4DFBA65EA0F1174D221800FEE52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1FA658944F6C174576CB508698E51C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1867B9C56727FF9652D737E4ADB66BA /* librealm-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CC78B96B8CFA37FF6187375F9CE277A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E857D72A50A650556F9A2A22AE46EABD /* Info.plist */,
+				80651576865BDCBB15F2D94E514FC6DB /* MXLCalendarManager.modulemap */,
+				FF20B70752D8895E1379488578C7AFE6 /* MXLCalendarManager.xcconfig */,
+				2CF3AC1612A2439C87B11336157C1F2E /* MXLCalendarManager-dummy.m */,
+				A855689EF28D4F88882C3860485EF120 /* MXLCalendarManager-prefix.pch */,
+				BFE1B4788D26FAF6B36EA781139A289E /* MXLCalendarManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MXLCalendarManager";
+			sourceTree = "<group>";
+		};
+		1D99A57D1AA3F88E39ACD5C331DE6D73 /* Pods-bcpApp */ = {
+			isa = PBXGroup;
+			children = (
+				337C39C3751CF3B817003235C3C5FA00 /* Info.plist */,
+				3E2B4586FD0BA386AA91D0D9EA210DE6 /* Pods-bcpApp.modulemap */,
+				4E9ABA85030A05B10D8BA8EAF5C53060 /* Pods-bcpApp-acknowledgements.markdown */,
+				E009C74CD88EFF4F3BC9388062B5B335 /* Pods-bcpApp-acknowledgements.plist */,
+				627506542902FFD49E3332A4135636C2 /* Pods-bcpApp-dummy.m */,
+				0B53AFF0811020472F3ADFD8E3CE115D /* Pods-bcpApp-frameworks.sh */,
+				53FC13B1404A87D3F34F642A558255FA /* Pods-bcpApp-resources.sh */,
+				41AC0AEB58E88100032FEA24850AABA0 /* Pods-bcpApp-umbrella.h */,
+				EC8AB4ADDA6B40F9F6A90271F6AF6E96 /* Pods-bcpApp.debug.xcconfig */,
+				B021D502BF43C5903FB433E8510ADCF4 /* Pods-bcpApp.release.xcconfig */,
+			);
+			name = "Pods-bcpApp";
+			path = "Target Support Files/Pods-bcpApp";
+			sourceTree = "<group>";
+		};
+		2BF9799C6F4DB0581B6400D6B1061246 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C293AA756BFC2E33EE17BF4B088619B /* Foundation.framework */,
+				D4BA622B3FA15861E0175E891996007A /* QuartzCore.framework */,
+				58631104965E3449911F0222BF22D2E8 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4E1FCDAF67E41E8A52B3F3DE0186C194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF936BEFA82DC11FAF281DEC2D851BE0 /* MBCalendarKit.framework */,
+				F90007F4A3344676C72810B0CFC2D067 /* MXLCalendarManager.framework */,
+				3EDE811A53D20C77D593FC114656C23A /* Pods_bcpApp.framework */,
+				AC4984D2F32EBC4109B0F4CF006B5943 /* Realm.framework */,
+				BA0AE2AAA0E55211AB4A7F133C99AD35 /* RealmSwift.framework */,
+				F5AAC87F81B655422B336EEFCA8324B4 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59CBB5E4D8DD2CC2837CAB495DB0F376 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CF89AE4C03D2928A8AB5426A7B30E2D /* Info.plist */,
+				1BA6F12BB655D0F6FA1AAC6B22988AC8 /* SwiftyJSON.modulemap */,
+				3EB606FB25AA9A331FA2391F8EE8FDD2 /* SwiftyJSON.xcconfig */,
+				C63F7B6DAF383A827B00185974E2B015 /* SwiftyJSON-dummy.m */,
+				2605A1A3320638622D6D88C719304488 /* SwiftyJSON-prefix.pch */,
+				A36406F3EF128C986AD82FCF8CAC0C23 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		6C714E4BED80B2F82A6DA8A26A88C74F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				246EB3837726573E0FFCC0A9481009D3 /* Realm.framework */,
+				2BF9799C6F4DB0581B6400D6B1061246 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70A92DFCC3C694FF6B95BAAF88027493 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9B5FA807EE6648756295910F74486B8 /* Info.plist */,
+				1D3748736EFDEB99A2B15A9EB2AEC014 /* RealmSwift.modulemap */,
+				F9D6528B8B413C672C90298554AD8FB9 /* RealmSwift.xcconfig */,
+				21C186EF8C0FD3A9BCADC4AE0DFFF32F /* RealmSwift-dummy.m */,
+				60F7F23AC16CE2177DBCFA4CBA3260C7 /* RealmSwift-prefix.pch */,
+				58987C824088092DCC17F6F9DF7F2ADF /* RealmSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RealmSwift";
+			sourceTree = "<group>";
+		};
+		78894CFBA49D72C6EE837ED669CA6774 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5AF6ACE49C99548AE44D12DC6BA82 /* MBCalendarKit */,
+				E6A4AC1C0E4B57C9A00819B0C0D3251E /* MXLCalendarManager */,
+				E77E8A7591C2543EC1E4E34C974CC331 /* Realm */,
+				DA2258F119E8084F8670BE84D6A07566 /* RealmSwift */,
+				97968251F13A61677477AC8F801BB097 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		795B981B0BC2AAB09BE4818447937EFF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D99A57D1AA3F88E39ACD5C331DE6D73 /* Pods-bcpApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6C714E4BED80B2F82A6DA8A26A88C74F /* Frameworks */,
+				78894CFBA49D72C6EE837ED669CA6774 /* Pods */,
+				4E1FCDAF67E41E8A52B3F3DE0186C194 /* Products */,
+				795B981B0BC2AAB09BE4818447937EFF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		97968251F13A61677477AC8F801BB097 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF1E2E17F6708F4C7DDDE812C3F198 /* SwiftyJSON.swift */,
+				59CBB5E4D8DD2CC2837CAB495DB0F376 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		A4B5AF6ACE49C99548AE44D12DC6BA82 /* MBCalendarKit */ = {
+			isa = PBXGroup;
+			children = (
+				521F7B3710F0F2EA47345F003042FEA4 /* CalendarKit.h */,
+				9136DC6640DC5BEAA7C2F586F70F65DC /* CKCalendarCell.h */,
+				C217D7A6798A21E094A24FDA6F1F812B /* CKCalendarCell.m */,
+				80AB484B07F8498DAE1A304B20886160 /* CKCalendarCellColors.h */,
+				F63F951D760424482DC62C4C54E7814C /* CKCalendarDataSource.h */,
+				CA0EFD3FC8D8756A73C5FAA55626B7D1 /* CKCalendarDelegate.h */,
+				ABBEE66F3C90B0395936EC5CEB07E619 /* CKCalendarEvent.h */,
+				AC1B666AC49F67FD2713726330B6D4E3 /* CKCalendarEvent.m */,
+				BE6DFD458C4D35025D9189E047874280 /* CKCalendarHeaderColors.h */,
+				231F4FEBC92300C3DD915D3B780A2DBC /* CKCalendarHeaderView.h */,
+				C8D6BF8DE58E16B202AE125B9450220E /* CKCalendarHeaderView.m */,
+				1E83979763F2ED616B81927595169985 /* CKCalendarMonthCellStates.h */,
+				CD9B181E398D53EB07353D192AA91941 /* CKCalendarView.h */,
+				A0348ADFEDEDAD1821F3E537772D4E41 /* CKCalendarView.m */,
+				1BD958610188691D30A603190AF9AAB2 /* CKCalendarViewController.h */,
+				55B7ABC78D7A734C4C71E2927E42E616 /* CKCalendarViewController.m */,
+				DF3E84DB487A0B0C11E7B675AB4E53A6 /* CKCalendarViewControllerInternal.h */,
+				AC98187C6226334E66386EAF238C5EEF /* CKCalendarViewControllerInternal.m */,
+				6501A0D5837D9BBA78983F0CF9705AB4 /* CKCalendarViewModes.h */,
+				27BFB0F5C7E9584FABAEC5A52E4A02EF /* CKTableViewCell.h */,
+				3174EB02D38215EA77630DC3315B04F5 /* CKTableViewCell.m */,
+				17BBBEBEB53257BCC836780AAC6DE01C /* MBPolygonView.h */,
+				E6E1F186614F7EFEDA48F791AB90D997 /* MBPolygonView.m */,
+				47991107916D4EDA5F846FF09FE3A3B8 /* NSCalendar+Components.h */,
+				5ED64C25DF3858FF3C951EE074E664C1 /* NSCalendar+Components.m */,
+				12E0EBAFCE26F225E8D88848B9D98F5A /* NSCalendar+DateComparison.h */,
+				923DDEDEBA167F395D59B62C4C165A67 /* NSCalendar+DateComparison.m */,
+				C4F67D031159EB2224675AE9EC904535 /* NSCalendar+DateManipulation.h */,
+				5379E066CA9BBE3E427B256F98E49A4F /* NSCalendar+DateManipulation.m */,
+				AFA9D76A00A9DC7DD46C2D4F601E4567 /* NSCalendar+Juncture.h */,
+				C8AE47809CE06CF0E6E70527450D8AF9 /* NSCalendar+Juncture.m */,
+				0597D790CB731BF2B25B6AC4AA7AB320 /* NSCalendar+Ranges.h */,
+				D0C9541AA4226A1BA55A568D56D0A49D /* NSCalendar+Ranges.m */,
+				FADEB26594C8E053E38DC268D95FBE6D /* NSCalendarCategories.h */,
+				5335F94278E159781F6900FBF9B99AD2 /* NSDate+Components.h */,
+				93CEDAFC1A1D877DFA4AB0CF615B2925 /* NSDate+Components.m */,
+				E9478C076C28FDCF21DD1E856DBA7A06 /* NSDate+Description.h */,
+				A774D48B2C7C348A00B3DE52A9C4B733 /* NSDate+Description.m */,
+				33868D253FDF12D58E599B8668F5C441 /* NSDateComponents+AllComponents.h */,
+				DEDA47E289DEE8B1BFC95A3240E5C486 /* NSDateComponents+AllComponents.m */,
+				6A1DED58F5096365A0D43694D7BCBE19 /* NSString+Color.h */,
+				1CF21A3A423DFC4E87A38ADCF9FE6A33 /* NSString+Color.m */,
+				2F27CFDADEA55E5DEE72DCD1430E34BD /* UIColor+HexString.h */,
+				EBADFBFC4732B809DC1D20B805390514 /* UIColor+HexString.m */,
+				BC0D05B6080CF3406DCFA2DD0841C3E6 /* UIView+AnimatedFrame.h */,
+				DFB6043C7EF14B7FC03C866525EE692D /* UIView+AnimatedFrame.m */,
+				8B81B788CDC4AF879F454D24C6D81469 /* UIView+Border.h */,
+				38BD45B8A1C8D4197BB0A929DAA1E6AE /* UIView+Border.m */,
+				FB04174EDDE48E9D91833EFB3D7531A1 /* Support Files */,
+			);
+			path = MBCalendarKit;
+			sourceTree = "<group>";
+		};
+		A9BCFA01A1100A878BACEB00640FCEE9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6DB722E94870F1E81A5866C57BE9F45C /* Realm.h */,
+				20CCD9AD056F6C634901B2F00CAF4E5B /* RLMArray.h */,
+				9E5B05927770105ED0FAC9683C70982D /* RLMCollection.h */,
+				2BA6D611EF56221195B70E679D594757 /* RLMConstants.h */,
+				CD55DCF3E5DACFD9B84FB4FFBA6F4875 /* RLMMigration.h */,
+				0EFD5716B454A7D666700C0850CC0222 /* RLMObject.h */,
+				EB73BFE268FAADCA4564F58130383206 /* RLMObjectBase.h */,
+				BB1D79DA9997175E9FD4D1B0D5828F44 /* RLMObjectBase_Dynamic.h */,
+				F13967EC89C4AF40F73F828451192500 /* RLMObjectSchema.h */,
+				2A4345995D9AAB5533935202791ADDFB /* RLMPlatform.h */,
+				59D2F7E953237B5CF008AC220B79C36E /* RLMProperty.h */,
+				8EBFD8B356E15DB0F9108725BD95A7A2 /* RLMRealm.h */,
+				DDF2610976516FA7F5F4187EAC2E5FCF /* RLMRealm_Dynamic.h */,
+				21C0F654B63D1BA8D73E7EDA687079B6 /* RLMRealmConfiguration.h */,
+				3F7948E9BEE83104CE6F0C8A9E3DF964 /* RLMResults.h */,
+				744477258A60AA587D57806395432897 /* RLMSchema.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DA2258F119E8084F8670BE84D6A07566 /* RealmSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4B3C3B926ACBBCC78162857B1FA3F1B3 /* Aliases.swift */,
+				241DB23EA96721A35661D1962D07EF49 /* Error.swift */,
+				111B918E842D56616D6A96A6E98A8548 /* LinkingObjects.swift */,
+				F9B951099195F6294966CF0C2FEF1E78 /* List.swift */,
+				51F26172DA5C537858D6055AA6904088 /* Migration.swift */,
+				50C99DA6397235FCA6EA0A21B38ABBDD /* Object.swift */,
+				4D5C93599A252E35D60027DEB61B4522 /* ObjectSchema.swift */,
+				0A06EDCC180C8ED4495EEAD29CFE27C7 /* Optional.swift */,
+				95BC2905657523707AA3380BECD53BDB /* Property.swift */,
+				DF49B1D59FDC461E216710BFD375CA8E /* Realm.swift */,
+				85798CD8A376792F711F17540CEA8E8E /* RealmCollectionType.swift */,
+				0E1692C29D19D068C1CD18985367301D /* RealmConfiguration.swift */,
+				5ECCC7356853BECFA36649664C8A381F /* Results.swift */,
+				88F06E67E51E511949A566DEF33DF081 /* Schema.swift */,
+				637039215FAEB9B00DBF00B662269452 /* SortDescriptor.swift */,
+				5ACBBE3D1881D456674CF0B8869712CC /* SwiftVersion.swift */,
+				DC224D87EC434ED011B2143AC1CD3BA0 /* Util.swift */,
+				70A92DFCC3C694FF6B95BAAF88027493 /* Support Files */,
+			);
+			path = RealmSwift;
+			sourceTree = "<group>";
+		};
+		E6A4AC1C0E4B57C9A00819B0C0D3251E /* MXLCalendarManager */ = {
+			isa = PBXGroup;
+			children = (
+				AAE400647656B178E20074B9E15A29EA /* MXLCalendar.h */,
+				35F1556847916244E7F8E3BB2502DD57 /* MXLCalendar.m */,
+				44F100748141F8423078D85DFDC25690 /* MXLCalendarAttendee.h */,
+				7A1B8710A0F2A27C1C42A0C5551BCBB1 /* MXLCalendarAttendee.m */,
+				E1DF2508D019E8CEF1D8E59B2F28DFA3 /* MXLCalendarEvent.h */,
+				EB19C9D55EEBB6173ACD6CEEC99EE24F /* MXLCalendarEvent.m */,
+				039CBE4D3B615EC0A81264B431A49CCE /* MXLCalendarManager.h */,
+				512EE3A994AC5FADB35C7C42CBB165E4 /* MXLCalendarManager.m */,
+				71D02F049FA809FBC68DFC62C1317D27 /* NSTimeZone+ProperAbbreviation.h */,
+				5F43727DFC28EB4405D8DCD442E59BBC /* NSTimeZone+ProperAbbreviation.m */,
+				1CC78B96B8CFA37FF6187375F9CE277A /* Support Files */,
+			);
+			path = MXLCalendarManager;
+			sourceTree = "<group>";
+		};
+		E77E8A7591C2543EC1E4E34C974CC331 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				251F73D87D49744649E083C7ADD93911 /* collection_change_builder.cpp */,
+				1EAF86A2DFD36C6E97F0851A0CB9DA7A /* collection_notifications.cpp */,
+				DE6DFD4B1B269F80116812705B402A15 /* collection_notifier.cpp */,
+				945EF2DAB3B18B653143ED4255644A3B /* external_commit_helper.cpp */,
+				B6CAE1C5DF28FFE24D87E79636134CCB /* format.cpp */,
+				540FAE3C5624F54D9FFC84BECD48F1EB /* index_set.cpp */,
+				51C7D3D394F922E26CEEBD1E87358C7D /* list.cpp */,
+				50A886653BF7F44C9F726D6900F02BDE /* list_notifier.cpp */,
+				66D1F095F9915BEB5505508904E8A58A /* object_schema.cpp */,
+				B48C667E535445137A3CB48A8054FD19 /* object_store.cpp */,
+				6F522F1B512AC3EF3F356EA9F095825A /* realm_coordinator.cpp */,
+				2414A61AD77E63D98F03222031B94D59 /* results.cpp */,
+				20C4EC953FDE22527098C94EE0FBC356 /* results_notifier.cpp */,
+				065E9BAEEF8C34A3C066768BA08BA90F /* RLMAccessor.h */,
+				7CAFEB4BA7640D869F664E4B1482E383 /* RLMAccessor.mm */,
+				13D32D73A0C0E0601182F0F9C32F97D1 /* RLMAnalytics.mm */,
+				9604E28944093ACAB729075650760280 /* RLMArray.mm */,
+				8AD524CB9D1E46480A397A0B773FB37A /* RLMArray_Private.h */,
+				59A12968C67A5E360C3AD7282C4F626F /* RLMArrayLinkView.mm */,
+				AE329CFC2DEAC1FBAE316F1C90EF3677 /* RLMCollection.mm */,
+				A1544F226FB9A0E2BBB21C26C197A70F /* RLMConstants.m */,
+				C132F8C2B1E6223C6CF6B165F96A8CE4 /* RLMListBase.h */,
+				95373D77CAFD0F49EB158F5D41CC89B8 /* RLMListBase.mm */,
+				B7933460F0447EA849398F9B4020B156 /* RLMMigration.mm */,
+				8738179E926CD29006B593327AE01433 /* RLMMigration_Private.h */,
+				7E6183437811602B83BBE1FEDFDF0301 /* RLMObject.mm */,
+				A05001F35DB0171F53B6F4AD0401C1BD /* RLMObject_Private.h */,
+				52F2261190C1F4E7B1F738441967734D /* RLMObjectBase.mm */,
+				77E4AA795C6FFF062376FF7FEACDC310 /* RLMObjectSchema.mm */,
+				B782975394D4046A7A208D8DAD1334FE /* RLMObjectSchema_Private.h */,
+				0DE23D763D90C58696AF55E6C815A030 /* RLMObjectStore.h */,
+				FF8F1637211E76A98D2B918157FB1E76 /* RLMObjectStore.mm */,
+				C34211F8F9B8CE548E2ABDAA21F4D6BB /* RLMObservation.mm */,
+				ADAA80F7EC50108A7C31D921CE1FF597 /* RLMOptionalBase.h */,
+				310025C712CBF9016D5D1B919E15399F /* RLMOptionalBase.mm */,
+				7E390C510B45FDAF82663D49A60036CB /* RLMPredicateUtil.mm */,
+				EE9507339171A1C1424645ED0166E957 /* RLMProperty.mm */,
+				660ACC9CFBC761A670662CBB324B820A /* RLMProperty_Private.h */,
+				6EB0F761C44F3800C71FD3133647E4BB /* RLMQueryUtil.mm */,
+				B70A667318B38C049E077575CB0A7578 /* RLMRealm.mm */,
+				07A8AC37F4D7F21A459F6E8A16C5F3AA /* RLMRealm_Private.h */,
+				70CBDF9E4BEE874B159E79C1C0210948 /* RLMRealmConfiguration.mm */,
+				6D3B981A1AE4C1AD39677E46658D1315 /* RLMRealmConfiguration_Private.h */,
+				4B5FCE721259503AAAE2925D9B0BE665 /* RLMRealmUtil.mm */,
+				32FF861BA0DFC6DADA3AAE830A927FB8 /* RLMResults.mm */,
+				BA47ECD20C3AE0FF07CB6FD55E42C1CD /* RLMResults_Private.h */,
+				D77082ECDE3E6A57DFE339420608D510 /* RLMSchema.mm */,
+				FF6AE52AAEF1E9EA765D517E49FDF846 /* RLMSchema_Private.h */,
+				1872AC09145BAAE05CE161D53DA70718 /* RLMSwiftSupport.m */,
+				F71140D14E61AF38A42859FBAC423B80 /* RLMUpdateChecker.mm */,
+				16DA3BB0233ABBBF034C8EC791ABA88D /* RLMUtil.mm */,
+				3F87DCF6049AB041915CFF12195F362D /* schema.cpp */,
+				59F4FC27DC4D08DC2E5A169B4902C287 /* shared_realm.cpp */,
+				27B64126FF260426207C0D96C6E12F9D /* transact_log_handler.cpp */,
+				9E40911A2EA0AE335F737EB6943F8B9E /* weak_realm_notifier.cpp */,
+				1A1FA658944F6C174576CB508698E51C /* Frameworks */,
+				A9BCFA01A1100A878BACEB00640FCEE9 /* Headers */,
+				EFAF70A137F0FE3037EB809B71B69733 /* Support Files */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		EFAF70A137F0FE3037EB809B71B69733 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BD46A392BB13E9DDFEC2D0985B56D5B /* Info.plist */,
+				0B7D62DE3125F7776B750FA29AD3D71B /* Realm.modulemap */,
+				841435C9106C50275AB9B844A86E5003 /* Realm.xcconfig */,
+				FF8E7F69AB797DF2485526E3629581CB /* Realm-dummy.m */,
+				57BBDA1BB76DE88A0095E44374099A5F /* Realm-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Realm";
+			sourceTree = "<group>";
+		};
+		FB04174EDDE48E9D91833EFB3D7531A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80CE927DC5C90F1431BBDC9F0F728B60 /* Info.plist */,
+				F90702E6433BBB413D0828B93AB5C08B /* MBCalendarKit.modulemap */,
+				09329E78C6CD7D78FDC97523E08CFB5F /* MBCalendarKit.xcconfig */,
+				1C109E8F01321EF4A72698B121032630 /* MBCalendarKit-dummy.m */,
+				CA54B630FFA873038CFFBB36C9871931 /* MBCalendarKit-prefix.pch */,
+				5386A9000B089443581E84A1E983AA8D /* MBCalendarKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCalendarKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F4F1D28840680A11F35CA938EDC944B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068ED42C98832DEE12A1DE4ACEC2375E /* RealmSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23199F0AC3C56348034D376C98F87341 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE85ED3F5F400D2471BD20C34B6D56DF /* CalendarKit.h in Headers */,
+				4E2E9423E0CCDED735E9E084B395A0CC /* CKCalendarCell.h in Headers */,
+				BDF6394B50D874A0CE81AC20E993AFD0 /* CKCalendarCellColors.h in Headers */,
+				C316BACDCA6F686938DA8F378E7DC755 /* CKCalendarDataSource.h in Headers */,
+				B124ADFBB96E4DFD35C458B2820CC22C /* CKCalendarDelegate.h in Headers */,
+				A51D847A245CDBFCCD9885ACC61D255F /* CKCalendarEvent.h in Headers */,
+				8055B3085FCAC6145A512381D580CFA3 /* CKCalendarHeaderColors.h in Headers */,
+				DC53F69140FE6186D3D2CA2C984EFAA7 /* CKCalendarHeaderView.h in Headers */,
+				5704B4E4829E8ECA64101D0D1304C98A /* CKCalendarMonthCellStates.h in Headers */,
+				CE6C88C19ECE4E2030D3255952149142 /* CKCalendarView.h in Headers */,
+				E723E6FE06EC7EF903F955BA5FBBC12A /* CKCalendarViewController.h in Headers */,
+				29333885C84F997C603BDE862FC5FB1C /* CKCalendarViewControllerInternal.h in Headers */,
+				36DD6D92AAE0E07FD4D8A5740BAAB961 /* CKCalendarViewModes.h in Headers */,
+				47F9DA5CACA9465CEE89182E2E8ACA82 /* CKTableViewCell.h in Headers */,
+				2464A5E70F916D23A7B5046200D7F689 /* MBCalendarKit-umbrella.h in Headers */,
+				AF5DC894DBD5E1D57908A578126206EF /* MBPolygonView.h in Headers */,
+				057E74F4F157F591A3B0D3D70CD4050E /* NSCalendar+Components.h in Headers */,
+				56EBA79D7F990B524EED63673372CD55 /* NSCalendar+DateComparison.h in Headers */,
+				7F324693EC25D8B8CB6ADD9AEFA0D018 /* NSCalendar+DateManipulation.h in Headers */,
+				7AB8F6472F65388DA7238099F697BE6B /* NSCalendar+Juncture.h in Headers */,
+				ECC406A55A9DB7DEDE8B712B73044F2B /* NSCalendar+Ranges.h in Headers */,
+				DDF251274988E5C0BA24A52A21703B85 /* NSCalendarCategories.h in Headers */,
+				B852F00D08EE5D135C79F83B47B38782 /* NSDate+Components.h in Headers */,
+				E53B61E2C8CE3E98C26E3202AECB6606 /* NSDate+Description.h in Headers */,
+				7255314846A21BEB11498A7508C0CFE7 /* NSDateComponents+AllComponents.h in Headers */,
+				2E4E199475C8F370B170359FE4C96F8A /* NSString+Color.h in Headers */,
+				F7DD6928349D4466D1C6BCFCA02A5E4C /* UIColor+HexString.h in Headers */,
+				E36EED47268AFD896D10950873FDC2AC /* UIView+AnimatedFrame.h in Headers */,
+				9C136839B7DB00C75F4A6E6FC6B0B344 /* UIView+Border.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CA7F251A6D50BA5FB795A91A04DFFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF077C77F49D15AD3E4ABAD6FBA1B7F3 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779C3698BD24006F705D455A52E7634C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB0D662E634AE7053E712EE8BED40F8 /* MXLCalendar.h in Headers */,
+				57B2671EAF23C208627759A5A1FC8601 /* MXLCalendarAttendee.h in Headers */,
+				A4FFCC9DDD56F9E3C6D4915ED6FA822A /* MXLCalendarEvent.h in Headers */,
+				F7F3B456B9918CB769C0EEAE6F1D9416 /* MXLCalendarManager-umbrella.h in Headers */,
+				DD616374C7174AAE7BAD293B10DD2D59 /* MXLCalendarManager.h in Headers */,
+				591AA73229B3A3FDF4C38B940FBE46FB /* NSTimeZone+ProperAbbreviation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6020804B77FBA04CC1295852EBF0B70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBD8DC805CED9EE53A21E28CBE8E08F /* Realm.h in Headers */,
+				56416B3E306AB0DF8536859B1F2181AB /* RLMAccessor.h in Headers */,
+				6CCABE465451888868D4C6AAD6E22F33 /* RLMArray.h in Headers */,
+				CDB8417FCD3F8F2D9188C40AEAC36138 /* RLMArray_Private.h in Headers */,
+				7181763AEDCE2DED71FC463B11186CBF /* RLMCollection.h in Headers */,
+				590686EFDD83D6EAC499E4A1410D6290 /* RLMConstants.h in Headers */,
+				AA6B4F77DC30BBB678FCDFA65FD7D9F0 /* RLMListBase.h in Headers */,
+				BA998BD3E76349D07667C94A2AE2F6F0 /* RLMMigration.h in Headers */,
+				3AD2E4AD7ED38729D73D54EE05F3F17E /* RLMMigration_Private.h in Headers */,
+				A5644F5C4211577BAC4DE744448A3549 /* RLMObject.h in Headers */,
+				4F621027BA60CF98967289A5A2905277 /* RLMObject_Private.h in Headers */,
+				726A33389C89A07C100C21A7BF12D74B /* RLMObjectBase.h in Headers */,
+				04EAC24D217ED05A7139662434BC7267 /* RLMObjectBase_Dynamic.h in Headers */,
+				4C9417607F53076D0532C129544DEDBC /* RLMObjectSchema.h in Headers */,
+				A9D65367A0761323F7B59E4B6AED649F /* RLMObjectSchema_Private.h in Headers */,
+				063429F1607154DD20279C7930F57713 /* RLMObjectStore.h in Headers */,
+				23B22BED8B55981C8A78918D15C80BF7 /* RLMOptionalBase.h in Headers */,
+				B5AD934B46BB3AB1F18FF39674AEBC58 /* RLMPlatform.h in Headers */,
+				E6D4AF7926D0F1CCC79510267F8906A2 /* RLMProperty.h in Headers */,
+				7EE1CB002C394BABFA19C35DA417BF3B /* RLMProperty_Private.h in Headers */,
+				6AEC0FD5341B5FD2F276663C6D43EFD5 /* RLMRealm.h in Headers */,
+				F3E64B63985DCFC8BE96E2770DA1E20D /* RLMRealm_Dynamic.h in Headers */,
+				22A36785B412B2EBBC68F567715B6EDA /* RLMRealm_Private.h in Headers */,
+				1EE099454B6D818C99101B3138BB4483 /* RLMRealmConfiguration.h in Headers */,
+				CAADDE3B2712E4BA1C5D55311B2CECAE /* RLMRealmConfiguration_Private.h in Headers */,
+				6871039F2D333B92BCB561CCB9D926EB /* RLMResults.h in Headers */,
+				89F86AC24553088DDE9375C555A4D3EB /* RLMResults_Private.h in Headers */,
+				96F25C089D9E8A1B87EBAB2C9A02057E /* RLMSchema.h in Headers */,
+				4BBE311F8640C9D98445CC48EAB52F80 /* RLMSchema_Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8663F015624995453378F4339C48C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC29CD8147F040D29752F6D0558265B8 /* Pods-bcpApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D6D846448A0909A41B315C4A3207D22 /* Realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F061608163C25080AF95656584D5E9 /* Build configuration list for PBXNativeTarget "Realm" */;
+			buildPhases = (
+				A726DC91E4302B6773668FB3182E1D6D /* Sources */,
+				F50B2A1AD6E96C28DEA52A3819A08F47 /* Frameworks */,
+				A6020804B77FBA04CC1295852EBF0B70 /* Headers */,
+				91F4F39508E7261C393A3CD4CBD915A0 /* Copy . Private Headers */,
+				6D62B1DA8C6524199435F323EFD37F02 /* Copy . Public Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Realm;
+			productName = Realm;
+			productReference = AC4984D2F32EBC4109B0F4CF006B5943 /* Realm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5AF86E066C4FB1A1439E31021A8769A9 /* RealmSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D84503E3E1DD2572D405245B434B4B4 /* Build configuration list for PBXNativeTarget "RealmSwift" */;
+			buildPhases = (
+				EBE47F6D75734DE0C094877AE0C57805 /* Sources */,
+				AFE2BECC9AA2032CE012763DEA20FE4B /* Frameworks */,
+				0F4F1D28840680A11F35CA938EDC944B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D262B11E2F7EBBC5FAED3AC53778218 /* PBXTargetDependency */,
+			);
+			name = RealmSwift;
+			productName = RealmSwift;
+			productReference = BA0AE2AAA0E55211AB4A7F133C99AD35 /* RealmSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6956D30B9960F888F0EA557438C78EEE /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38157159E2D68CD521CC800EEED57625 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				32C241667B574281BF65D52AF5712C83 /* Sources */,
+				DA664B5973F2AB1E35294771E0491047 /* Frameworks */,
+				48CA7F251A6D50BA5FB795A91A04DFFB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = F5AAC87F81B655422B336EEFCA8324B4 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D53957E508FFF045AC0597A70600E3B6 /* MBCalendarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7BEE201B5997F959EE3BBAC32FD8E1 /* Build configuration list for PBXNativeTarget "MBCalendarKit" */;
+			buildPhases = (
+				068040B2F50E558DCA71629EF97B409E /* Sources */,
+				8BFE3A4D66666F40EF5D27D4478EBAF8 /* Frameworks */,
+				23199F0AC3C56348034D376C98F87341 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBCalendarKit;
+			productName = MBCalendarKit;
+			productReference = AF936BEFA82DC11FAF281DEC2D851BE0 /* MBCalendarKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5ED9E3215A05579DB5F13E8C3880D41 /* Pods-bcpApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC96B88F1CF0CA40948008101215239 /* Build configuration list for PBXNativeTarget "Pods-bcpApp" */;
+			buildPhases = (
+				D8EE45722BD286EB0935557638B46264 /* Sources */,
+				0AA20B1CA21B342F13914D41103CCB3A /* Frameworks */,
+				BD8663F015624995453378F4339C48C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F4CE8EFABF8A649AB12C909CEFBDC6 /* PBXTargetDependency */,
+				332FEE3DBFBA45BCAC7731C549267685 /* PBXTargetDependency */,
+				A72791FA31CB7725FF7116B422639CDB /* PBXTargetDependency */,
+				CAEE706C2D9C4A5EEAF201C131117C4F /* PBXTargetDependency */,
+				B2C76EED186EB54DAA8A81ED3EC30EA5 /* PBXTargetDependency */,
+			);
+			name = "Pods-bcpApp";
+			productName = "Pods-bcpApp";
+			productReference = 3EDE811A53D20C77D593FC114656C23A /* Pods_bcpApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F896F7E0CD8C1DFFD7E1D2A78336902B /* MXLCalendarManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443BAFA99A908EF8E32BD2DA4EC485DC /* Build configuration list for PBXNativeTarget "MXLCalendarManager" */;
+			buildPhases = (
+				65F1CA46AE80B66307DFB990DD7C8F51 /* Sources */,
+				B14257A1AFAD685F54B11C7FA52B1426 /* Frameworks */,
+				779C3698BD24006F705D455A52E7634C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MXLCalendarManager;
+			productName = MXLCalendarManager;
+			productReference = F90007F4A3344676C72810B0CFC2D067 /* MXLCalendarManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4E1FCDAF67E41E8A52B3F3DE0186C194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D53957E508FFF045AC0597A70600E3B6 /* MBCalendarKit */,
+				F896F7E0CD8C1DFFD7E1D2A78336902B /* MXLCalendarManager */,
+				D5ED9E3215A05579DB5F13E8C3880D41 /* Pods-bcpApp */,
+				4D6D846448A0909A41B315C4A3207D22 /* Realm */,
+				5AF86E066C4FB1A1439E31021A8769A9 /* RealmSwift */,
+				6956D30B9960F888F0EA557438C78EEE /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068040B2F50E558DCA71629EF97B409E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D61067A20D17305B97071580D379717 /* CKCalendarCell.m in Sources */,
+				C0DD046C85CD32FAD0B55DDAB8C6B7C6 /* CKCalendarEvent.m in Sources */,
+				EEC8EFC7D9AC2B00179947686639E26F /* CKCalendarHeaderView.m in Sources */,
+				089E261D6FBDEDDC2F475F6A75E643C7 /* CKCalendarView.m in Sources */,
+				62894C8B02F277370CDBB953FFCCAA3E /* CKCalendarViewController.m in Sources */,
+				378DBD1747D81C3FFA37771840080220 /* CKCalendarViewControllerInternal.m in Sources */,
+				A37FED8C9D980782AF20A99C02006D4A /* CKTableViewCell.m in Sources */,
+				BAF2B03D5F722F4ECE011B0BEE303EBA /* MBCalendarKit-dummy.m in Sources */,
+				7AA1C67DA46C14F0F621875160DCA6E3 /* MBPolygonView.m in Sources */,
+				42C542D409E80CF0A34D015A63959C0C /* NSCalendar+Components.m in Sources */,
+				54B2B3BD62286F78F5C2A47D3CEA1DD9 /* NSCalendar+DateComparison.m in Sources */,
+				96FB532CBBD33F4661707A5EFC918A13 /* NSCalendar+DateManipulation.m in Sources */,
+				6C8884889A5126B5110DB75F0046C267 /* NSCalendar+Juncture.m in Sources */,
+				D5AC2EC8E0AECAE311F2297F2C1A7554 /* NSCalendar+Ranges.m in Sources */,
+				8AE2575858570154A0245421E6166450 /* NSDate+Components.m in Sources */,
+				5A4192359B922C7E3CB896294ED47863 /* NSDate+Description.m in Sources */,
+				73F78B59C790C2DBE402D7F56C822101 /* NSDateComponents+AllComponents.m in Sources */,
+				96C01812F5B9878918A50BBE4F97E674 /* NSString+Color.m in Sources */,
+				6071C7828DC3B24A0FDCC8974EEE7526 /* UIColor+HexString.m in Sources */,
+				F3060DE01D37929E2E075D680FB6751B /* UIView+AnimatedFrame.m in Sources */,
+				FCB23D1A167AF2056C44A64DD02C15FB /* UIView+Border.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C241667B574281BF65D52AF5712C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877F88EB40E5A0174172E114503AFABA /* SwiftyJSON-dummy.m in Sources */,
+				AEC750743381EC733ACDB76F1907F1A4 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F1CA46AE80B66307DFB990DD7C8F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2D2E71FC6C27B9DD845913C2531374 /* MXLCalendar.m in Sources */,
+				EBD0FCC86565974AFF2CFBF328F7C9D4 /* MXLCalendarAttendee.m in Sources */,
+				AFA2C401DD26F39834C24A010992C37C /* MXLCalendarEvent.m in Sources */,
+				53C73C8F32889A8EB993D2FE53EE4FB6 /* MXLCalendarManager-dummy.m in Sources */,
+				DF8D38FDB91EB234B338023342588097 /* MXLCalendarManager.m in Sources */,
+				7EF9E0BA7B7BFEEFA13DC64420F63C6D /* NSTimeZone+ProperAbbreviation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A726DC91E4302B6773668FB3182E1D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5168A75F9CAD52A5C2334F892F62992E /* collection_change_builder.cpp in Sources */,
+				6C8AA4C386A9805DDDB2973AB99690E7 /* collection_notifications.cpp in Sources */,
+				8E94B640EFB423002A0528047CD2C3F2 /* collection_notifier.cpp in Sources */,
+				A33BA775BF4F8961C90406EF95B0384F /* external_commit_helper.cpp in Sources */,
+				1572B5945DCDBDC70E46E3DE3900E69D /* format.cpp in Sources */,
+				CB6026C03108C31AE67B49957711E09A /* index_set.cpp in Sources */,
+				A1C766544965921C3E46CBCD0849ACD6 /* list.cpp in Sources */,
+				287516D8632E655A80807F868FF404C4 /* list_notifier.cpp in Sources */,
+				492257E8BE374C295CF13A79C3836DA0 /* object_schema.cpp in Sources */,
+				6DD131F6208404EBF78627A183C3A213 /* object_store.cpp in Sources */,
+				F02553ACC93C62056FE7BBF34511DE0D /* Realm-dummy.m in Sources */,
+				2C7D19F94CFBD75F1505A1912102D71C /* realm_coordinator.cpp in Sources */,
+				9C3C803997B10DC26459AE3C9E15B473 /* results.cpp in Sources */,
+				105ED80C7C2B5E469A8FC2F188B3ADB0 /* results_notifier.cpp in Sources */,
+				09D5E41A2EF175BBF5C2D95F0244FCA2 /* RLMAccessor.mm in Sources */,
+				35EACCEBFB156D32CEEC1F7514DC152D /* RLMAnalytics.mm in Sources */,
+				AEF4B2F6922AA6DA293B9A75F0B06EF8 /* RLMArray.mm in Sources */,
+				F87A05FFD7BE1334B599C14C6CC72AE3 /* RLMArrayLinkView.mm in Sources */,
+				C4A7222427ABE6C4FB294993D71C1379 /* RLMCollection.mm in Sources */,
+				D34D1C208968132D4A3732D157CF86B0 /* RLMConstants.m in Sources */,
+				3D9E0FCC0339FA7D36D764FE0065C89E /* RLMListBase.mm in Sources */,
+				C8E55C1BA7B44E2C57F8D0858F780EEF /* RLMMigration.mm in Sources */,
+				22C6B6DAC9E791F62B93D38C45A392F8 /* RLMObject.mm in Sources */,
+				F8BB5387868E37D03D1BB7B1A06F11F1 /* RLMObjectBase.mm in Sources */,
+				C4552CBDD36482A944A0998FDE92EC58 /* RLMObjectSchema.mm in Sources */,
+				553DAF40EA1A0A7C83B214E771876641 /* RLMObjectStore.mm in Sources */,
+				009BF5298BD5F019F67177E0271D1A3E /* RLMObservation.mm in Sources */,
+				336ECDB07B28E7A53A30239FE77E4EDC /* RLMOptionalBase.mm in Sources */,
+				219E658D550CB52F8E71489205934721 /* RLMPredicateUtil.mm in Sources */,
+				A8844EC39D67B93693A1D912DB56E1CF /* RLMProperty.mm in Sources */,
+				9B36C2962CCF97C714A4BFE27C8AE787 /* RLMQueryUtil.mm in Sources */,
+				7324B21AB9520EB8068A6358F5F86E6F /* RLMRealm.mm in Sources */,
+				550F04AFFE7BA1493A8403E3124FA3A5 /* RLMRealmConfiguration.mm in Sources */,
+				7B335A0623001927E6602F830803D237 /* RLMRealmUtil.mm in Sources */,
+				09EFEAB185927E74190D6ABE3240C2E9 /* RLMResults.mm in Sources */,
+				B01E68C02CE86FAA4925EE7CA09C2011 /* RLMSchema.mm in Sources */,
+				2B2EAB18DB44F4ACDBE8031522C974F8 /* RLMSwiftSupport.m in Sources */,
+				FB8CED8240500B69C095D149002560EA /* RLMUpdateChecker.mm in Sources */,
+				7CF1D6DD40BC0BCA45EF031CBCE4756D /* RLMUtil.mm in Sources */,
+				3FDE800EEBC32579FD668DEAE08DD390 /* schema.cpp in Sources */,
+				2D8381D959E8D2C890D8A4D6A9D39936 /* shared_realm.cpp in Sources */,
+				F74F97A009F990266E68767D788E1362 /* transact_log_handler.cpp in Sources */,
+				EB8B25AE655AB3371D6C4E4E510F1064 /* weak_realm_notifier.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EE45722BD286EB0935557638B46264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4BA177C80EECD44FEA9675E5E419CD /* Pods-bcpApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE47F6D75734DE0C094877AE0C57805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D1CBEB4EBC5BC12F5DF6A132A88455 /* Aliases.swift in Sources */,
+				D0EEA539E1C6FC0B7C1534FDD8DDE35B /* Error.swift in Sources */,
+				5F62BE6A16D013F83F2FADEE04E3ACFB /* LinkingObjects.swift in Sources */,
+				FD9C9DFE50646697833CAFB49865CBDB /* List.swift in Sources */,
+				8CF01F01A84769BEA8FED6461B54E534 /* Migration.swift in Sources */,
+				A09FFAD7B79229F7C5EBE75D414D988B /* Object.swift in Sources */,
+				1976D1E9B4E37B780CB012C325675D72 /* ObjectSchema.swift in Sources */,
+				A5E52C4868038AD7C03A7AAE40F4DF01 /* Optional.swift in Sources */,
+				AB803DF9119C1D604017ED5BE2749213 /* Property.swift in Sources */,
+				09DFFD7EE9DB186C5273E4F6FF2432C4 /* Realm.swift in Sources */,
+				C503DEFCF6619D6AEE52417B7DA2B9B7 /* RealmCollectionType.swift in Sources */,
+				047B79A29909E7FCD0322A1C7B1020E3 /* RealmConfiguration.swift in Sources */,
+				1A52C3C038891F2CD0ED48802F33ED37 /* RealmSwift-dummy.m in Sources */,
+				A536CAE492158A3DAE8D4C669FF12C40 /* Results.swift in Sources */,
+				2DFC3B41A28B59A61A2A2D188D53C992 /* Schema.swift in Sources */,
+				B55AA2D78E63A5C32F610A4A119F52DD /* SortDescriptor.swift in Sources */,
+				B3A80B35EF647780FE15EAFE6BDF9532 /* SwiftVersion.swift in Sources */,
+				986C7E592513609EBCC9EAE5F25613D6 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332FEE3DBFBA45BCAC7731C549267685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MXLCalendarManager;
+			target = F896F7E0CD8C1DFFD7E1D2A78336902B /* MXLCalendarManager */;
+			targetProxy = 584FA03BDBCCB68097D9637D01876BDF /* PBXContainerItemProxy */;
+		};
+		5D262B11E2F7EBBC5FAED3AC53778218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Realm;
+			target = 4D6D846448A0909A41B315C4A3207D22 /* Realm */;
+			targetProxy = E1236E2A2D78A9949514611420207269 /* PBXContainerItemProxy */;
+		};
+		77F4CE8EFABF8A649AB12C909CEFBDC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCalendarKit;
+			target = D53957E508FFF045AC0597A70600E3B6 /* MBCalendarKit */;
+			targetProxy = 6B3CD4E95779970AD92ABA15AFF1980F /* PBXContainerItemProxy */;
+		};
+		A72791FA31CB7725FF7116B422639CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Realm;
+			target = 4D6D846448A0909A41B315C4A3207D22 /* Realm */;
+			targetProxy = 0D4DD3B208736EC3C765139E32AE1458 /* PBXContainerItemProxy */;
+		};
+		B2C76EED186EB54DAA8A81ED3EC30EA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 6956D30B9960F888F0EA557438C78EEE /* SwiftyJSON */;
+			targetProxy = 01F85ADD38836BB1FA8516B5F8C9CB21 /* PBXContainerItemProxy */;
+		};
+		CAEE706C2D9C4A5EEAF201C131117C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealmSwift;
+			target = 5AF86E066C4FB1A1439E31021A8769A9 /* RealmSwift */;
+			targetProxy = EACF176BDA1A66A6FCDA0253A0D36EF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00048ED9AF555E0EC6BA9C619BD94BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B021D502BF43C5903FB433E8510ADCF4 /* Pods-bcpApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-bcpApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bcpApp/Pods-bcpApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_bcpApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A230B3C49BED68AF905A3C3331A6137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB606FB25AA9A331FA2391F8EE8FDD2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24215378A13C62B101AB52C1804AED8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8AB4ADDA6B40F9F6A90271F6AF6E96 /* Pods-bcpApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-bcpApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bcpApp/Pods-bcpApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_bcpApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		280A26D9A6779C904D8210D28A430BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841435C9106C50275AB9B844A86E5003 /* Realm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Realm/Realm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Realm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Realm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A67B8D103FFC7BEEAF3013A4A09E20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF20B70752D8895E1379488578C7AFE6 /* MXLCalendarManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXLCalendarManager/MXLCalendarManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXLCalendarManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXLCalendarManager/MXLCalendarManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MXLCalendarManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4014E7C8148C9A66C8C0463EAFFF09BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841435C9106C50275AB9B844A86E5003 /* Realm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Realm/Realm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Realm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Realm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6B017BD6B7262CC0BB92C1FF39A3BB47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF20B70752D8895E1379488578C7AFE6 /* MXLCalendarManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXLCalendarManager/MXLCalendarManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXLCalendarManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXLCalendarManager/MXLCalendarManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MXLCalendarManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CC65DA9D810FC3D7F3C48544C7F05B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D6528B8B413C672C90298554AD8FB9 /* RealmSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RealmSwift/RealmSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RealmSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RealmSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A22A02378FA884050FDC6BD15D5ED2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09329E78C6CD7D78FDC97523E08CFB5F /* MBCalendarKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBCalendarKit/MBCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCalendarKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4EAC6D6C639294D7715BAC8B151BA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09329E78C6CD7D78FDC97523E08CFB5F /* MBCalendarKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBCalendarKit/MBCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCalendarKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8C0EF14E262FF228C83F9ED5C91C286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB606FB25AA9A331FA2391F8EE8FDD2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECACFB32085E79C5FB8DB31DAAC54EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D6528B8B413C672C90298554AD8FB9 /* RealmSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RealmSwift/RealmSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RealmSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RealmSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16F061608163C25080AF95656584D5E9 /* Build configuration list for PBXNativeTarget "Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280A26D9A6779C904D8210D28A430BFA /* Debug */,
+				4014E7C8148C9A66C8C0463EAFFF09BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38157159E2D68CD521CC800EEED57625 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A230B3C49BED68AF905A3C3331A6137 /* Debug */,
+				E8C0EF14E262FF228C83F9ED5C91C286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7BEE201B5997F959EE3BBAC32FD8E1 /* Build configuration list for PBXNativeTarget "MBCalendarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EAC6D6C639294D7715BAC8B151BA14 /* Debug */,
+				A22A02378FA884050FDC6BD15D5ED2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443BAFA99A908EF8E32BD2DA4EC485DC /* Build configuration list for PBXNativeTarget "MXLCalendarManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A67B8D103FFC7BEEAF3013A4A09E20C /* Debug */,
+				6B017BD6B7262CC0BB92C1FF39A3BB47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC96B88F1CF0CA40948008101215239 /* Build configuration list for PBXNativeTarget "Pods-bcpApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24215378A13C62B101AB52C1804AED8D /* Debug */,
+				00048ED9AF555E0EC6BA9C619BD94BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D84503E3E1DD2572D405245B434B4B4 /* Build configuration list for PBXNativeTarget "RealmSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC65DA9D810FC3D7F3C48544C7F05B6 /* Debug */,
+				ECACFB32085E79C5FB8DB31DAAC54EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

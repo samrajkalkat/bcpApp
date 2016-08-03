@@ -1,0 +1,26 @@
+PODS:
+  - MBCalendarKit (3.0.4)
+  - MXLCalendarManager (1.0.4)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - MBCalendarKit (~> 3.0.4)
+  - MXLCalendarManager
+  - RealmSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
+  MXLCalendarManager: 3432fa4fb369d352f84a0874f69b198de70119ac
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 858356651059987eebdefbfe6afce8fde6031542
+
+COCOAPODS: 1.0.1

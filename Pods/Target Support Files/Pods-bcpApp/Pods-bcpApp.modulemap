@@ -1,0 +1,6 @@
+framework module Pods_bcpApp {
+  umbrella header "Pods-bcpApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
