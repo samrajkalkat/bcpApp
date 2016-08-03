@@ -21,6 +21,7 @@
 		F9C97E301D4FB78300C9573C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97E2E1D4FB78300C9573C /* LaunchScreen.storyboard */; };
 		F9C97E391D4FB7C600C9573C /* GradebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */; };
 		F9C97E3B1D4FC34600C9573C /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */; };
+		F9D432471D525713002177B2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D432461D525713002177B2 /* CalendarView.swift */; };
 		F9F3BA4C1D502A8700B17D55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F3BA4B1D502A8700B17D55 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		F9C97E311D4FB78300C9573C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradebookViewController.swift; sourceTree = "<group>"; };
 		F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		F9D432461D525713002177B2 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F9F3BA4B1D502A8700B17D55 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		F9C97E161D4FB78300C9573C = {
 			isa = PBXGroup;
 			children = (
+				F9D432451D525709002177B2 /* Views */,
 				F97F30481D51B3CC0013CECD /* bcpApp-Bridging-Header.h */,
 				F90FDFA21D5174F70023A703 /* events.json */,
 				F9C97E211D4FB78300C9573C /* bcpApp */,
@@ -131,6 +134,14 @@
 				F97F30491D51B4B80013CECD /* CalViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9D432451D525709002177B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9D432461D525713002177B2 /* CalendarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F9F3BA4A1D502A7F00B17D55 /* Models */ = {
@@ -270,6 +281,7 @@
 				F9C97E2B1D4FB78300C9573C /* bcpApp.xcdatamodeld in Sources */,
 				F9C97E391D4FB7C600C9573C /* GradebookViewController.swift in Sources */,
 				F9C97E251D4FB78300C9573C /* ViewController.swift in Sources */,
+				F9D432471D525713002177B2 /* CalendarView.swift in Sources */,
 				F9C97E231D4FB78300C9573C /* AppDelegate.swift in Sources */,
 				F92873DE1D5031EB008A2714 /* RealmHelper.swift in Sources */,
 				F9C97E3B1D4FC34600C9573C /* EmailViewController.swift in Sources */,
