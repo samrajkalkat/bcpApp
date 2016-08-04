@@ -18,11 +18,9 @@ class RealmHelper{
         }
     }
     
-    static func getUser(user: User) {
+    static func getUser() -> Results<User> {
         let realm = try! Realm()
-        try! realm.write() {
-            realm.add(user)
-        }
+        return realm.objects(User)
     }
     
 }

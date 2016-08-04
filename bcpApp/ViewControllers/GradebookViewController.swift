@@ -38,6 +38,8 @@ class GradbookViewController: UIViewController, UIWebViewDelegate {
         
         let fillForm = String(format: "document.getElementById('username').value = '\(savedUsername)'; document.getElementById('password').value = '\(savedPassword)';")
         
+        webView.stringByEvaluatingJavaScriptFromString(fillForm)
+        
         
 
         

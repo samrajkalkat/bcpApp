@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="-1439" y="-445"/>
         </scene>
-        <!--Item-->
+        <!--Calendar-->
         <scene sceneID="vd9-h1-SnR">
             <objects>
                 <viewController id="uiE-Yb-s0F" customClass="CalViewController" customModule="bcpApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -183,7 +183,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xIZ-7I-lIY"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" id="xIZ-7I-lIY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lm1-jz-mMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

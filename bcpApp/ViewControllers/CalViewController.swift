@@ -57,8 +57,6 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                         var month = ""
                         var year = ""
                         
-
-                        
                         //day
                         if eventDate.substringWithRange(eventDate.startIndex.advancedBy(8)...eventDate.startIndex.advancedBy(9)).hasPrefix("0") {
                             
@@ -144,10 +142,6 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                         self.data[date] = event
                         
                     }
-                    
-                
-                    
-                    
                     
                 } else {
                     print("could not get json from file, make sure that file contains valid json.")

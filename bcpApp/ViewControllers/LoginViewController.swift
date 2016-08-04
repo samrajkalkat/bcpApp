@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 var UserName = ""
 var UserPassword: String = ""
@@ -20,17 +21,37 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
-    @IBAction func loginPressed(sender: AnyObject) {
-        if usernameLabel.text != "" && passwordLabel.text != "" {
-           
-            UserName = usernameLabel.text!
-            UserPassword = passwordLabel.text!
+    let user = User()
+    
+    override func viewDidLoad() {
+        for realmUser in RealmHelper.getUser() {
+            if realmUser.name != "" && realmUser.password != "" {
+                usernameLabel.text = realmUser.name
+                passwordLabel.text = realmUser.password
+                print("existing user")
+            }
         }
-        else {
-            print("nothing entered")
-        }
-        
     }
     
-
+    @IBAction func loginPressed(sender: AnyObject) {
+        
+        for realmUser in RealmHelper.getUser() {
+            if realmUser.name == "" && realmUser.password == "" && passwordLabel.text != "" && usernameLabel.text != ""{
+                user.password = passwordLabel.text!
+                user.name = usernameLabel.text!
+                RealmHelper.addUser(user)
+                UserName = usernameLabel.text!
+                UserPassword = passwordLabel.text!
+                print("user created!")
+            }
+                
+            
+            else {
+                print("nothing entered / existing")
+                
+            }
+        }
+        
+    
+    }
 }
