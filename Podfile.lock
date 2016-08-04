@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManagerSwift (4.0.4)
   - MBCalendarKit (3.0.4)
   - MXLCalendarManager (1.0.4)
   - Realm (1.0.2):
@@ -10,6 +11,7 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - MBCalendarKit (~> 3.0.4)
   - MXLCalendarManager
   - RealmSwift
@@ -17,6 +19,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
   MXLCalendarManager: 3432fa4fb369d352f84a0874f69b198de70119ac
   Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
@@ -24,6 +27,6 @@ SPEC CHECKSUMS:
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 5c93882397e2f288307fd20e6e3880fbd2a632b2
+PODFILE CHECKSUM: a0de2951e1efa059ee77228f41b394c3d2e24add
 
 COCOAPODS: 1.0.1
