@@ -81,7 +81,7 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                         //year
                         year = eventDate.substringWithRange(eventDate.startIndex.advancedBy(0)...eventDate.startIndex.advancedBy(3))
                         
-                        previous = (month, day)
+                        
                         
                       
                         // have a dictionary of type [ NSDate : [EventThing] ]
@@ -89,7 +89,8 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                         // Parse through dictionary & set all events.
                         
                         
-                        let key = String(item["Start"])
+                        let description = String(item["Start"])
+                        let key = description.substringWithRange(description.startIndex...eventDate.startIndex.advancedBy(9))
                         
                         let title : NSString = NSLocalizedString(String(item["Summary"]), comment: "")
                         let date : NSDate = NSDate(day: UInt(day)!, month: UInt(month)!, year: UInt(year)!)
