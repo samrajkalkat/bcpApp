@@ -11,11 +11,12 @@ import UIKit
 import MBCalendarKit
 import SwiftyJSON
 
-
+var allEvents = [String : [CKCalendarEvent]]()
 
 class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
     
     var data = NSMutableDictionary()
+    
     
     required init?(coder aDecoder: NSCoder) {
         
@@ -45,14 +46,18 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
                     
+                    var datesList = [String:String]()
                     
-                    for item in jsonObj.arrayValue {
-                        
+                    let jsonArray: [JSON] = jsonObj.arrayValue
+                    
+                    for (index, item) in jsonArray.enumerate() {
                         let eventDate = String(item["Start"])
                         
                         var day = ""
                         var month = ""
                         var year = ""
+                        
+
                         
                         //day
                         if eventDate.substringWithRange(eventDate.startIndex.advancedBy(8)...eventDate.startIndex.advancedBy(9)).hasPrefix("0") {
@@ -76,17 +81,72 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
                         //year
                         year = eventDate.substringWithRange(eventDate.startIndex.advancedBy(0)...eventDate.startIndex.advancedBy(3))
                         
+                        previous = (month, day)
                         
-                        print(month)
+                      
+                        // have a dictionary of type [ NSDate : [EventThing] ]
+                        // Parse through all events & sort into dates.
+                        // Parse through dictionary & set all events.
+                        
+                        
+                        let key = String(item["Start"])
                         
                         let title : NSString = NSLocalizedString(String(item["Summary"]), comment: "")
                         let date : NSDate = NSDate(day: UInt(day)!, month: UInt(month)!, year: UInt(year)!)
-                        let event : CKCalendarEvent = CKCalendarEvent(title: title as String, andDate: NSDate(), andInfo: nil)
+                        let event : CKCalendarEvent = CKCalendarEvent(title: title as String, andDate: date, andInfo: nil)
                         
-                        self.data[date] = [event]
+                        // if allEvents
                         
-                    
+                        if allEvents[key] == nil {
+            
+                            allEvents[key] = [event]
+                        }
+                        else {
+                            
+                            allEvents[key]!.append(event)
+                        }
+
+                        
                     }
+                    
+                    for (eventDate,event) in allEvents {
+                        
+                        var eventDay = String()
+                        var eventMonth = String()
+                        var eventYear = String()
+                
+                        
+                        //day
+                        if eventDate.substringWithRange(eventDate.startIndex.advancedBy(8)...eventDate.startIndex.advancedBy(9)).hasPrefix("0") {
+                            
+                            eventDay = eventDate.substringWithRange(eventDate.startIndex.advancedBy(9)...eventDate.startIndex.advancedBy(9))
+                        }
+                            
+                        else {
+                            eventDay = eventDate.substringWithRange(eventDate.startIndex.advancedBy(8)...eventDate.startIndex.advancedBy(9))
+                        }
+                        
+                        //month
+                        if eventDate.substringWithRange(eventDate.startIndex.advancedBy(5)...eventDate.startIndex.advancedBy(6)).hasPrefix("0"){
+                            eventMonth = eventDate.substringWithRange(eventDate.startIndex.advancedBy(6)...eventDate.startIndex.advancedBy(6))
+                        }
+                            
+                        else {
+                            eventMonth = eventDate.substringWithRange(eventDate.startIndex.advancedBy(5)...eventDate.startIndex.advancedBy(6))
+                        }
+                        
+                        //year
+                        eventYear = eventDate.substringWithRange(eventDate.startIndex.advancedBy(0)...eventDate.startIndex.advancedBy(3))
+                        
+                        let date : NSDate = NSDate(day: UInt(eventDay)!, month: UInt(eventMonth)!, year: UInt(eventYear)!)
+                        
+                        self.data[date] = event
+                        
+                    }
+                    
+                
+                    
+                    
                     
                 } else {
                     print("could not get json from file, make sure that file contains valid json.")

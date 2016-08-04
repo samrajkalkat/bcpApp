@@ -10,6 +10,8 @@ pod 'RealmSwift'
 pod 'MXLCalendarManager'
 pod 'SwiftyJSON'
 pod 'MBCalendarKit', '~>3.0.4'
+pod 'SwiftDate'
+
 
 end
 
