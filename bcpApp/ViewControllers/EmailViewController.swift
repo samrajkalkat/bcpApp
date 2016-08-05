@@ -27,8 +27,6 @@ class EmailViewController: UIViewController, UIWebViewDelegate {
               webViewDidFinishLoad(emailWebView)
         }
         emailWebView.scrollView.bounces = false
-    
-
     }
     
 
@@ -42,7 +40,7 @@ class EmailViewController: UIViewController, UIWebViewDelegate {
         let savedPassword = UserPassword
         
         
-        let fillForm = String(format: "document.getElementById('username').value = '\(savedUsername)'; document.getElementById('password').value = '\(savedPassword)';")
+        let fillForm = String(format: "document.getElementById('username').value = '\(UserName)'; document.getElementById('password').value = '\(UserPassword)';")
         webView.stringByEvaluatingJavaScriptFromString(fillForm)
 
 

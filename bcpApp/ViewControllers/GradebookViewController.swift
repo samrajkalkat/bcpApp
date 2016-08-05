@@ -40,13 +40,6 @@ class GradbookViewController: UIViewController, UIWebViewDelegate {
         
         webView.stringByEvaluatingJavaScriptFromString(fillForm)
         
-        
-
-        
-        
     }
-    
-    
-
     
 }

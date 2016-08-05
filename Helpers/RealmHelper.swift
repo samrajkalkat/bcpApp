@@ -18,6 +18,13 @@ class RealmHelper{
         }
     }
     
+    static func deleteUser(user: User){
+        let realm = try!Realm()
+        try!realm.write(){
+            realm.delete(user)
+        }
+    }
+    
     static func getUser() -> Results<User> {
         let realm = try! Realm()
         return realm.objects(User)

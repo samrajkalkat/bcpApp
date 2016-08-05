@@ -390,7 +390,7 @@
     }
     
     //  Count the rows and columns that we'll need
-    NSUInteger rowCount = [self _rowCountForDisplayMode:[self displayMode]];
+    NSUInteger rowCount = [self _rowCountForDisplayMode:[self displayMode]] +  1;
     NSUInteger columnCount = [self _columnCountForDisplayMode:[self displayMode]];
     
     //  Cache the cell values for easier readability below
@@ -411,7 +411,7 @@
             
             CKCalendarCell *cell = [self _dequeueCell];
             
-            CGRect frame = CGRectMake(column*width, yOffset + headerOffset + (row*height), width, height);
+            CGRect frame = CGRectMake(column*width, yOffset + headerOffset + (row*height) , width, height);
             [cell setFrame:frame];
             
             /* STEP 2:  We need to know some information about the cells - namely, if they're in

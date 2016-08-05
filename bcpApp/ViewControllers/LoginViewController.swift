@@ -19,11 +19,15 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordLabel: UITextField!
     
+    @IBOutlet weak var boxView: UIView!
+    
     @IBOutlet weak var loginButton: UIButton!
     
     let user = User()
     
     override func viewDidLoad() {
+        
+        boxView.layer.cornerRadius = 15
         for realmUser in RealmHelper.getUser() {
             if realmUser.name != "" && realmUser.password != "" {
                 usernameLabel.text = realmUser.name

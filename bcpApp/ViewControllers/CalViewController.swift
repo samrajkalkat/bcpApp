@@ -40,6 +40,8 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         if let path = NSBundle.mainBundle().pathForResource("events", ofType: "json") {
             do {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
@@ -156,6 +158,8 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
         
         var calendar: CKCalendarView = CKCalendarView()
         
+        
+        calendar.frame = CGRectOffset(self.view.frame, 0.0, 20.0);
         
         calendar.delegate = self
         calendar.dataSource = self
