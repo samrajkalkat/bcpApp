@@ -1,0 +1,6 @@
+framework module SwiftRaisedTab {
+  umbrella header "SwiftRaisedTab-umbrella.h"
+
+  export *
+  module * { export * }
+}

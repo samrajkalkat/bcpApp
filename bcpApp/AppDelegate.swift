@@ -22,9 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
-        emailController.viewWillAppear(false)
-        gradeController.viewWillAppear(false)
-        IQKeyboardManager.sharedManager().enable = true
+//        emailController.viewWillAppear(true)
+//        gradeController.viewWillAppear(true)
+//        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
     
         
         return true

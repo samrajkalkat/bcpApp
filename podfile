@@ -12,6 +12,9 @@ pod 'SwiftyJSON'
 pod 'MBCalendarKit', '~>3.0.4'
 pod 'SwiftDate'
 pod 'IQKeyboardManagerSwift'
+pod 'KINWebBrowser'
+pod 'SwiftRaisedTab', '~> 0.2.0'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 
 end
 

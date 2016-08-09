@@ -27,6 +27,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        
+        
         boxView.layer.cornerRadius = 15
         for realmUser in RealmHelper.getUser() {
             if realmUser.name != "" && realmUser.password != "" {
@@ -35,7 +37,9 @@ class LoginViewController: UIViewController {
                 print("existing user")
             }
         }
+        
     }
+    
     
     @IBAction func loginPressed(sender: AnyObject) {
         
