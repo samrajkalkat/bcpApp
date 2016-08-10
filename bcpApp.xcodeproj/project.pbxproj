@@ -194,9 +194,9 @@
 				F9C97E371D4FB7B400C9573C /* ViewControllers */,
 				F9C97E221D4FB78300C9573C /* AppDelegate.swift */,
 				F9C97E261D4FB78300C9573C /* Main.storyboard */,
+				F9C97E2E1D4FB78300C9573C /* LaunchScreen.storyboard */,
 				F9325F511D59938E00C3CE37 /* SwiftWebVC */,
 				F9C97E2C1D4FB78300C9573C /* Assets.xcassets */,
-				F9C97E2E1D4FB78300C9573C /* LaunchScreen.storyboard */,
 				F9C97E311D4FB78300C9573C /* Info.plist */,
 				F9C97E291D4FB78300C9573C /* bcpApp.xcdatamodeld */,
 			);

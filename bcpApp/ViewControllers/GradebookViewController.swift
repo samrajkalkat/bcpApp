@@ -32,8 +32,16 @@ class GradbookViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         
         canvasButton.layer.cornerRadius = 15
+        canvasButton.layer.borderWidth = 1
+        canvasButton.layer.borderColor = UIColor(red:0.04, green:0.38, blue:0.80, alpha:1.0).CGColor
+        
         navianceButton.layer.cornerRadius = 15
+        navianceButton.layer.borderWidth = 1
+        navianceButton.layer.borderColor = UIColor(red:0.04, green:0.38, blue:0.80, alpha:1.0).CGColor
+        
         powerschoolButton.layer.cornerRadius = 15
+        powerschoolButton.layer.borderWidth = 1
+        powerschoolButton.layer.borderColor = UIColor(red:0.04, green:0.38, blue:0.80, alpha:1.0).CGColor
     }
 }
 
@@ -41,14 +49,14 @@ func webViewDidFinishLoad(webView: UIWebView) {
     
     
     // fill data
-    //        let savedUsername = UserName
-    //        let savedPassword = UserPassword
-    //
-    //
-    //        let fillForm = String(format: "document.getElementById('username').value = '\(savedUsername)'; document.getElementById('password').value = '\(savedPassword)';")
-    //
-    //        webView.stringByEvaluatingJavaScriptFromString(fillForm)
-    //        
+//            let savedUsername = UserName
+//            let savedPassword = UserPassword
+//    
+//
+//            let fillForm = String(format: "document.getElementById('username').value = '\(savedUsername)'; document.getElementById('password').value = '\(savedPassword)';")
+//    
+//            webVC.stringByEvaluatingJavaScriptFromString(fillForm)
+    
 }
 
 
