@@ -31,7 +31,7 @@
         _state = CKCalendarMonthCellStateNormal;
         
         //  Normal Cell Colors
-        _normalBackgroundColor = kCalendarColorLightGray;
+        _normalBackgroundColor = [UIColor whiteColor];
         _selectedBackgroundColor = kCalendarColorBlue;
         _inactiveSelectedBackgroundColor = kCalendarColorDarkGray;
         
@@ -50,7 +50,7 @@
         _dotColor = kCalendarColorDarkTextGradient;
         _selectedDotColor = [UIColor whiteColor];
         
-        _cellBorderColor = kCalendarColorCellBorder;
+        _cellBorderColor = [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.0];
         _selectedCellBorderColor = kCalendarColorSelectedCellBorder;
         
         // Label

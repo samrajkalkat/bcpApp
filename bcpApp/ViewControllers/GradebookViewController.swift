@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class GradbookViewController: UIViewController, UIWebViewDelegate {
+   
     
     
     @IBAction func powerschoolPressed(sender: AnyObject) {
@@ -23,8 +24,13 @@ class GradbookViewController: UIViewController, UIWebViewDelegate {
     }
     @IBAction func canvasPressed(sender: AnyObject) {
         let webVC = SwiftModalWebVC(urlString: "https://federation.bcp.org/idp/SSO.saml2?SAMLRequest=nZJfa4MwFMXf9ykk79WYrbYGFbqWsUK3Sev2sLcYr21AE5fE%2Ffn2i3aDQuke9hS4OTnnx7lJDGubji56e5BbeOvBWO%2BzbaSh40WKei2pYkYYKlkLhlpOd4uHDSU%2Bpp1WVnHVIG%2B9SlEV1jwmvKwIwfMoBoYZrglMKxLBlNd1eT3D1SyOpzHyXkAboWSKnI17bUwPa2ksk9aNcBhN8HyC44KEFM%2FpTfSKvPwn61bISsj932DlUWTofVHkk%2FxpVyBvYQxo60KXSpq%2BBb0D%2FS44PG83KTpY2xkaBCXvfOFAdM9tr8Hnqg0atRcyGOpAWTIcdOTVJz39TcN%2Bk1E25FyIGXxIEpwEZFfJcTuPznK9ylUj%2BNd%2FtnOndMvsZXXoh%2BNEVJN6lNJemg64qAVUrrmmUR9LDcxCihwzuB6CczKHG5z%2Fpuwb")
+
         self.presentViewController(webVC, animated: true, completion: nil)
     }
+    
+    
+    
+ 
     
     @IBOutlet weak var canvasButton: UIButton!
     @IBOutlet weak var navianceButton: UIButton!

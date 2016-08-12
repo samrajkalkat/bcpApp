@@ -173,7 +173,7 @@
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
-    [[self layer] setShadowColor:[[UIColor darkGrayColor] CGColor]];
+    [[self layer] setShadowColor:[[UIColor colorWithRed:0.68 green:0.80 blue:0.88 alpha:1.0]CGColor]];
     [[self layer] setShadowOffset:CGSizeMake(0, 3)];
     [[self layer] setShadowOpacity:1.0];
     

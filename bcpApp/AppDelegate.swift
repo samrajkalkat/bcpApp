@@ -24,8 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //        emailController.viewWillAppear(true)
 //        gradeController.viewWillAppear(true)
-//        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        
     
         
         return true

@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BRYXBanner-BRYXBanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BRYXBanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,12 +87,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02E5EC2FAF0FFA18B0AFF1230EF29D11</key>
+		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
+		<key>06004E1CA41B57452A04D3A726338A21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>072118380AC6929877FA6B938C1943AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +107,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0DAC5EC5A18378B6A090D74A3991E5CD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1520003FEBEC114D6C84F832AFEDB994</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>207316C567A4BD2D69244ADBC10730E0</key>
+		<key>164674352472AFF2B429A4DC5E871A68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>258A48AF524242C5C8E4130571203BB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28E86E88B73536760BC593E99F864BBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA84C46558D35DB854CA21940D8FE17B</key>
+		<key>4AF9D54F4C080D8452BCE3C9D9E01784</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75AEEEFD7E431013E8E60009251D5797</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,17 +152,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E94A39C98182D5C0CA4352D06C337501</key>
+		<key>E45C60E65DC7B25E659C0A735F907FC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF4F391CFBA6DA53132E483912BAA6B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F26983F1EF86B86A93F2E4B5DCD353DD</key>
+		<key>E821BCCEA8B67D6597020CCB9111D690</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -40,12 +40,12 @@
     if (self) {
         
         _monthTitle = [UILabel new];
-        [_monthTitle setTextColor:kCalendarColorHeaderMonth];
-        [_monthTitle setShadowColor:kCalendarColorHeaderMonthShadow];
-        [_monthTitle setShadowOffset:CGSizeMake(0, 1)];
+        [_monthTitle setTextColor:[UIColor whiteColor]];
+//        [_monthTitle setShadowColor: [UIColor whiteColor]];
+//        [_monthTitle setShadowOffset:CGSizeMake(0, 1)];
         [_monthTitle setBackgroundColor:[UIColor clearColor]];
         [_monthTitle setTextAlignment:NSTextAlignmentCenter];
-        [_monthTitle setFont:[UIFont boldSystemFontOfSize:22]];
+        [_monthTitle setFont:[UIFont boldSystemFontOfSize:20]];
         
         _columnTitles = [NSMutableArray new];
         _columnLabels = [NSMutableArray new];
@@ -63,7 +63,7 @@
 {
     [super willMoveToSuperview:newSuperview];
     [self setNeedsLayout];
-    [self setBackgroundColor:kCalendarColorHeaderGradientDark];
+    [self setBackgroundColor:[UIColor colorWithRed:0.68 green:0.80 blue:0.88 alpha:1.0]];
 }
 
 - (void)layoutSubviews
