@@ -34,12 +34,7 @@ class LoginViewController: UIViewController {
         popTip.shouldDismissOnTap = true
         popTip.shouldDismissOnTapOutside = true
         popTip.shouldDismissOnSwipeOutside = true
-
-
-        
-        
-        
-        
+    
         
     }
     override func viewDidLoad() {
@@ -66,7 +61,7 @@ class LoginViewController: UIViewController {
             existing = false
         }
             
-        else if usernameLabel.text?.isEmpty == true || usernameLabel.text?.isEmpty == true {
+        else if usernameLabel.text?.isEmpty == true || passwordLabel.text?.isEmpty == true {
             let banner = Banner(title: "Oops!", subtitle: "Looks like you left something blank!", backgroundColor: UIColor.redColor())
             banner.dismissesOnTap = true
             banner.show(duration: 3.0)

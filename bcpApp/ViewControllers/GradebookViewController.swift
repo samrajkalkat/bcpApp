@@ -12,6 +12,7 @@ import UIKit
 class GradbookViewController: UIViewController, UIWebViewDelegate {
    
     
+    @IBOutlet var gradebookView: UIView!
     
     @IBAction func powerschoolPressed(sender: AnyObject) {
         let webVC = SwiftModalWebVC(urlString: "https://powerschool.bcp.org/student/idp")

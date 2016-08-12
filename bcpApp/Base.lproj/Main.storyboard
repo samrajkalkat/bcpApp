@@ -41,7 +41,7 @@
                             <constraint firstItem="eBH-eB-nmE" firstAttribute="bottom" secondItem="hcI-5F-zLa" secondAttribute="top" id="rCD-sS-GLd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Email" id="yLg-hd-Dou">
+                    <tabBarItem key="tabBarItem" title="" image="message" id="yLg-hd-Dou">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <connections>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUS-PV-WOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="842"/>
+            <point key="canvasLocation" x="339" y="362"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="liA-P4-rBb">
@@ -212,13 +212,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="calendar" id="xIZ-7I-lIY">
+                    <tabBarItem key="tabBarItem" title="" image="Calendar!" selectedImage="Calendar!" id="xIZ-7I-lIY">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lm1-jz-mMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="-1517"/>
+            <point key="canvasLocation" x="339" y="-1189"/>
         </scene>
         <!--Gradbook View Controller-->
         <scene sceneID="bwW-jL-fMr">
@@ -384,7 +384,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="leading" secondItem="6R6-SQ-v87" secondAttribute="trailing" constant="-73" id="07U-Br-oBJ"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="68" id="1kW-bm-UAj"/>
@@ -509,12 +509,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="grade" id="QMG-VT-KSA">
+                    <tabBarItem key="tabBarItem" title="" image="Exam" id="QMG-VT-KSA">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="canvasButton" destination="dAD-tG-i7H" id="dMy-fK-mfo"/>
+                        <outlet property="gradebookView" destination="Yct-yn-z4g" id="47w-VK-kpC"/>
                         <outlet property="navianceButton" destination="yXR-eh-zvL" id="0NA-Zc-inl"/>
                         <outlet property="powerschoolButton" destination="44D-Pv-W18" id="cv4-PF-OF0"/>
                     </connections>
@@ -530,7 +531,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="f8e-0N-Zjz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.71728118677493891" green="0.85448594863845906" blue="0.95631363122171942" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.77291173936952018" green="0.88746226820348095" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="uiE-Yb-s0F" kind="relationship" relationship="viewControllers" id="NQC-Ec-Dvt"/>
@@ -544,10 +545,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Email" width="30" height="30"/>
+        <image name="Calendar!" width="30" height="30"/>
+        <image name="Exam" width="30" height="30"/>
         <image name="PowerSchoolLogo" width="160" height="216"/>
-        <image name="calendar" width="30" height="30"/>
-        <image name="grade" width="30" height="30"/>
+        <image name="message" width="30" height="30"/>
         <image name="naviance-avatar-2x" width="144" height="144"/>
         <image name="unnamed" width="300" height="300"/>
     </resources>
