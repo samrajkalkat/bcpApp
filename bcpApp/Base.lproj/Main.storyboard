@@ -157,11 +157,14 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-tf-cAm">
-                                <rect key="frame" x="234" y="433" width="132" height="30"/>
+                                <rect key="frame" x="262" y="433" width="76" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Why do I need too?">
+                                <state key="normal" title="Why login?">
                                     <color key="titleColor" red="0.69198868920351586" green="0.70699783391474291" blue="0.77249599363589749" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="questionPressed:" destination="d4N-nI-p16" eventType="touchUpInside" id="fpl-dh-dvn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8330870789" green="0.89182361060000004" blue="0.97433894229999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,6 +190,7 @@
                         <outlet property="boxView" destination="ZdN-6i-FGa" id="cSx-mi-ikQ"/>
                         <outlet property="loginButton" destination="zQL-VQ-1TU" id="KQZ-mB-tfF"/>
                         <outlet property="passwordLabel" destination="A9F-N5-wNM" id="xIx-gE-OwO"/>
+                        <outlet property="questionButton" destination="o4o-tf-cAm" id="iio-wy-O6a"/>
                         <outlet property="usernameLabel" destination="cxN-c6-wMr" id="TJr-OS-3Ax"/>
                         <segue destination="YGF-tZ-w9a" kind="show" identifier="login" id="e6Y-yf-344"/>
                     </connections>

@@ -16,6 +16,6 @@ pod 'KINWebBrowser'
 pod 'SwiftRaisedTab', '~> 0.2.0'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 pod 'BRYXBanner'
-
+pod 'AMPopTip'
 end
 

@@ -10,10 +10,12 @@ import Foundation
 import UIKit
 import RealmSwift
 import BRYXBanner
+import AMPopTip
 
 var UserName = ""
 var UserPassword: String = ""
 var existing = false
+
 
 class LoginViewController: UIViewController {
     
@@ -22,8 +24,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var boxView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var questionButton: UIButton!
     let user = User()
     
+    @IBAction func questionPressed(sender: AnyObject) {
+        let popTip = AMPopTip()
+        popTip.popoverColor = UIColor.blueColor()
+        popTip.showText("Login is done to easily sign in to all of your school accounts at once. \n Don't worry, all passwords are encypted and stored locally!", direction: .Down, maxWidth: 200, inView: self.view, fromFrame: questionButton.frame)
+        popTip.shouldDismissOnTap = true
+        popTip.shouldDismissOnTapOutside = true
+        popTip.shouldDismissOnSwipeOutside = true
+
+
+        
+        
+        
+        
+        
+    }
     override func viewDidLoad() {
         boxView.layer.cornerRadius = 15
         for realmUser in RealmHelper.getUser() {
@@ -47,13 +65,13 @@ class LoginViewController: UIViewController {
             banner.show(duration: 3.0)
             existing = false
         }
-        
+            
         else if usernameLabel.text?.isEmpty == true || usernameLabel.text?.isEmpty == true {
             let banner = Banner(title: "Oops!", subtitle: "Looks like you left something blank!", backgroundColor: UIColor.redColor())
             banner.dismissesOnTap = true
             banner.show(duration: 3.0)
         }
-        
+            
         else if existing == true {
             UserName = usernameLabel.text!
             UserPassword = passwordLabel.text!

@@ -1,4 +1,5 @@
 PODS:
+  - AMPopTip (1.2.0)
   - ARChromeActivity (1.0.5)
   - BRYXBanner (0.5.2):
     - BRYXBanner/Core (= 0.5.2)
@@ -21,6 +22,7 @@ PODS:
   - TUSafariActivity (1.0.4)
 
 DEPENDENCIES:
+  - AMPopTip
   - BRYXBanner
   - IQKeyboardManagerSwift
   - KINWebBrowser
@@ -43,6 +45,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  AMPopTip: 853bcb307ecc6f71742cccdbc5b594bea097f188
   ARChromeActivity: 821c7849b566f49583987468733a896fee35aa4d
   BRYXBanner: 5f0911d52e0a77e088f7ea7ddcdebd02afb7828a
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
@@ -57,6 +60,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: 28651c8fe993fa24d39fefb14c38e3d92a8c0337
+PODFILE CHECKSUM: c6de73d83848d7839dbacfb4940c0bf5c77112a2
 
 COCOAPODS: 1.0.1

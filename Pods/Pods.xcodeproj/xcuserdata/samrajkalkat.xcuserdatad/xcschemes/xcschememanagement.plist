@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AMPopTip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ARChromeActivity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,16 +97,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>06004E1CA41B57452A04D3A726338A21</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>072118380AC6929877FA6B938C1943AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>0B0EBA1FCFE4D6C9EFCDE41735756990</key>
 		<dict>
 			<key>primary</key>
@@ -112,17 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>164674352472AFF2B429A4DC5E871A68</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>258A48AF524242C5C8E4130571203BB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>28E86E88B73536760BC593E99F864BBA</key>
+		<key>3CE648958B52BA4D03C57742A4E549F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,12 +117,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AF9D54F4C080D8452BCE3C9D9E01784</key>
+		<key>50C758553586F86B6DF7B3EB8D2D8935</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586E40C0BEBAB01A075A5E60359FA09D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>75AEEEFD7E431013E8E60009251D5797</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>848685EE7A1469169E8F3DC1E87CFDE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84BBF847618034EED39D9E22DB8AD3B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9554C7B04DB0E88E197CF2F949AA9C43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABB0FCBE2EF0CF7F0CD57780D34AF11B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,7 +167,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E821BCCEA8B67D6597020CCB9111D690</key>
+		<key>F83119E88A4E0C2943E4EA698AA38B61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
