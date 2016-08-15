@@ -34,7 +34,11 @@ class LoginViewController: UIViewController {
         popTip.shouldDismissOnTap = true
         popTip.shouldDismissOnTapOutside = true
         popTip.shouldDismissOnSwipeOutside = true
-    
+        questionButton.enabled = false
+        delay(5) {
+            self.questionButton.enabled = true
+        }
+        
         
     }
     override func viewDidLoad() {
@@ -49,6 +53,15 @@ class LoginViewController: UIViewController {
             }
         }
         
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
     
@@ -67,11 +80,11 @@ class LoginViewController: UIViewController {
             banner.show(duration: 3.0)
         }
             
-        else if existing == true {
-            UserName = usernameLabel.text!
-            UserPassword = passwordLabel.text!
-            self.performSegueWithIdentifier("login", sender: self)
-        }
+//        else if existing == true {
+//            UserName = usernameLabel.text!
+//            UserPassword = passwordLabel.text!
+//            self.performSegueWithIdentifier("login", sender: self)
+//        }
             
         else {
             if passwordLabel.text?.isEmpty == false && usernameLabel.text?.isEmpty == false {

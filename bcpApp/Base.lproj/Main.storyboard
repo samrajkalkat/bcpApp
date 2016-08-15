@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUS-PV-WOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="362"/>
+            <point key="canvasLocation" x="339" y="326"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="liA-P4-rBb">
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lm1-jz-mMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="-1189"/>
+            <point key="canvasLocation" x="339" y="-1169"/>
         </scene>
         <!--Gradbook View Controller-->
         <scene sceneID="bwW-jL-fMr">
@@ -233,13 +233,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-tG-i7H" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="125" y="279" width="350" height="75"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.93333333330000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="125" y="240" width="350" height="75"/>
+                                <color key="backgroundColor" red="0.2976265198846032" green="0.29861610919985171" blue="0.35923477564102568" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="p6o-Pa-vR7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Canvas"/>
+                                <state key="normal" title="Canvas">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
@@ -264,15 +266,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44D-Pv-W18" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="125" y="130" width="350" height="75"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.93333333330000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="125" y="66" width="350" height="75"/>
+                                <color key="backgroundColor" red="0.2976265198846032" green="0.29861610919985171" blue="0.35923477564102568" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="AcW-tn-r7n"/>
                                     <constraint firstAttribute="width" constant="350" id="SLk-fA-kyb"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="puS-LN-uSA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Powerschool"/>
+                                <state key="normal" title="Powerschool">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
@@ -298,10 +302,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-eh-zvL" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="125" y="428" width="350" height="75"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.93333333330000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="125" y="415" width="350" height="75"/>
+                                <color key="backgroundColor" red="0.2976265198846032" green="0.29861610919985171" blue="0.35923477564102568" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Naviance"/>
+                                <state key="normal" title="Naviance">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
@@ -320,29 +326,8 @@
                                     <action selector="naviancePressed:" destination="xez-YY-HUg" eventType="touchUpInside" id="Ysx-fO-lVZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PowerSchoolLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0ve-Ju-pwU" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="153" y="143" width="41" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Y3s-sQ-uAW"/>
-                                    <constraint firstAttribute="width" constant="41" id="fLF-10-NyL"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-HT-vWQ" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="148" y="292" width="50" height="50"/>
+                                <rect key="frame" x="148" y="253" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="AdI-MS-atJ"/>
                                     <constraint firstAttribute="height" constant="50" id="OGT-bd-dsk"/>
@@ -363,7 +348,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviance-avatar-2x" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-SQ-v87" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="148" y="441" width="50" height="50"/>
+                                <rect key="frame" x="148" y="428" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bpN-R4-clD"/>
                                     <constraint firstAttribute="width" constant="50" id="g8M-h2-1ju"/>
@@ -383,8 +368,29 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PowerSchoolLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0ve-Ju-pwU" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="153" y="79" width="41" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y3s-sQ-uAW"/>
+                                    <constraint firstAttribute="width" constant="41" id="fLF-10-NyL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="leading" secondItem="6R6-SQ-v87" secondAttribute="trailing" constant="-73" id="07U-Br-oBJ"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="68" id="1kW-bm-UAj"/>
@@ -411,7 +417,6 @@
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="68" id="N60-jD-VZe"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="centerY" secondItem="yXR-eh-zvL" secondAttribute="centerY" id="Nei-2l-c9L"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="55" id="Ooh-3M-G3X"/>
-                            <constraint firstItem="PHk-MZ-9wo" firstAttribute="top" secondItem="yXR-eh-zvL" secondAttribute="bottom" constant="48" id="Ox8-ji-rEH"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="leading" secondItem="0ve-Ju-pwU" secondAttribute="leading" id="Qm2-Jf-G8N"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="trailing" secondItem="6R6-SQ-v87" secondAttribute="trailing" id="RAA-kP-Z0u"/>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="leading" secondItem="6R6-SQ-v87" secondAttribute="trailing" constant="-73" id="RFJ-HL-66q"/>
@@ -428,6 +433,7 @@
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="68" id="YZX-XP-4bX"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="centerY" secondItem="yXR-eh-zvL" secondAttribute="centerY" id="Z9i-gT-HFF"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="leading" secondItem="Lpe-HT-vWQ" secondAttribute="leading" id="a3F-ib-hQ8"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="centerY" secondItem="Yct-yn-z4g" secondAttribute="centerY" id="agT-B5-1Kb"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="centerY" secondItem="yXR-eh-zvL" secondAttribute="centerY" id="c5l-gE-Jm5"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="trailing" secondItem="0ve-Ju-pwU" secondAttribute="trailing" id="cIQ-kD-SP9"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="leading" secondItem="Lpe-HT-vWQ" secondAttribute="trailing" constant="-73" id="dxY-i9-YeI"/>
@@ -437,24 +443,28 @@
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="yXR-eh-zvL" secondAttribute="bottom" constant="-62" id="fde-JY-Vh8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dAD-tG-i7H" secondAttribute="trailing" constant="105" id="g90-qM-ZRn"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="centerY" secondItem="dAD-tG-i7H" secondAttribute="centerY" id="hQp-L2-kN2"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="99" id="ieJ-Oi-X1j"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="leading" secondItem="0ve-Ju-pwU" secondAttribute="leading" id="jBm-cg-v6w"/>
                             <constraint firstItem="Lpe-HT-vWQ" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="-62" id="ldN-gh-IEl"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="68" id="msr-Uo-Ii6"/>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="55" id="n0d-xW-PI0"/>
                             <constraint firstItem="44D-Pv-W18" firstAttribute="leading" secondItem="0ve-Ju-pwU" secondAttribute="trailing" constant="-69" id="oii-aH-sr0"/>
-                            <constraint firstItem="yXR-eh-zvL" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="74" id="on0-rr-CGw"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="leading" secondItem="yXR-eh-zvL" secondAttribute="leading" id="pPG-J5-nTB"/>
                             <constraint firstItem="44D-Pv-W18" firstAttribute="top" secondItem="Zcm-zj-7rG" secondAttribute="bottom" constant="68" id="rme-mz-nH8"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="trailing" secondItem="yXR-eh-zvL" secondAttribute="trailing" id="rq1-r1-giS"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="centerY" secondItem="Yct-yn-z4g" secondAttribute="centerY" constant="-22.5" id="s6Q-7v-Ter"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="89" id="se0-am-mXO"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="centerY" secondItem="Yct-yn-z4g" secondAttribute="centerY" id="szZ-74-TJ5"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="leading" secondItem="Lpe-HT-vWQ" secondAttribute="leading" id="tqr-cG-Dhg"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="top" secondItem="yXR-eh-zvL" secondAttribute="bottom" constant="-62" id="uvK-EY-uVD"/>
                             <constraint firstItem="6R6-SQ-v87" firstAttribute="centerY" secondItem="yXR-eh-zvL" secondAttribute="centerY" id="v4J-r3-cwr"/>
-                            <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="74" id="vJ0-6B-Hgh"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="113" id="vJ0-6B-Hgh"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="centerY" secondItem="Lpe-HT-vWQ" secondAttribute="centerY" id="vVi-p8-tBO"/>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="top" secondItem="Lpe-HT-vWQ" secondAttribute="bottom" constant="67" id="wHh-tK-epp"/>
                             <constraint firstItem="yXR-eh-zvL" firstAttribute="top" secondItem="Lpe-HT-vWQ" secondAttribute="bottom" constant="92" id="x27-vA-oMO"/>
                             <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="0ve-Ju-pwU" secondAttribute="bottom" constant="67" id="xgl-P8-r9b"/>
+                            <constraint firstItem="dAD-tG-i7H" firstAttribute="top" secondItem="44D-Pv-W18" secondAttribute="bottom" constant="89" id="xj3-s5-Fkm"/>
+                            <constraint firstItem="yXR-eh-zvL" firstAttribute="top" secondItem="dAD-tG-i7H" secondAttribute="bottom" constant="100" id="yZT-bY-rbc"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
@@ -470,13 +480,17 @@
                                 <exclude reference="Bz8-OI-aUW"/>
                                 <exclude reference="Ooh-3M-G3X"/>
                                 <exclude reference="UdJ-DA-Da6"/>
+                                <exclude reference="agT-B5-1Kb"/>
                                 <exclude reference="dxY-i9-YeI"/>
                                 <exclude reference="g90-qM-ZRn"/>
                                 <exclude reference="pPG-J5-nTB"/>
                                 <exclude reference="rq1-r1-giS"/>
+                                <exclude reference="se0-am-mXO"/>
                                 <exclude reference="szZ-74-TJ5"/>
+                                <exclude reference="vJ0-6B-Hgh"/>
                                 <exclude reference="vVi-p8-tBO"/>
                                 <exclude reference="xgl-P8-r9b"/>
+                                <exclude reference="xj3-s5-Fkm"/>
                                 <exclude reference="Qm2-Jf-G8N"/>
                                 <exclude reference="RAA-kP-Z0u"/>
                                 <exclude reference="TId-Hi-ypZ"/>
@@ -522,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgr-b5-aWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="-445"/>
+            <point key="canvasLocation" x="541" y="-454"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7f-CP-fwo">
