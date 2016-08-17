@@ -161,6 +161,7 @@ class CalViewController: CKCalendarViewController, CKCalendarViewDataSource{
         
         calendar.frame = CGRectOffset(self.view.frame, 0.0, 20.0);
         
+        
         calendar.delegate = self
         calendar.dataSource = self
         

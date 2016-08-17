@@ -63,7 +63,7 @@
 {
     [super willMoveToSuperview:newSuperview];
     [self setNeedsLayout];
-    [self setBackgroundColor:[UIColor colorWithRed:0.68 green:0.80 blue:0.88 alpha:1.0]];
+    [self setBackgroundColor:[UIColor colorWithRed:0.79 green:0.89 blue:0.99 alpha:1.0]];
 }
 
 - (void)layoutSubviews

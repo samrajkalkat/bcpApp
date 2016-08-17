@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C12F9FADAE99A8F7DB615F0 /* Pods_bcpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA13E4150DE4A9D92E5972 /* Pods_bcpApp.framework */; };
-		F90FDF9F1D51117B0023A703 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */; };
 		F90FDFA31D5174F70023A703 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = F90FDFA21D5174F70023A703 /* events.json */; };
 		F92873DE1D5031EB008A2714 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92873DD1D5031EB008A2714 /* RealmHelper.swift */; };
 		F9325F6D1D59938E00C3CE37 /* SwiftWebVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9325F521D59938E00C3CE37 /* SwiftWebVC.strings */; };
@@ -41,7 +40,6 @@
 		12CA13E4150DE4A9D92E5972 /* Pods_bcpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bcpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5882DE388695EFC36D646AF /* Pods-bcpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bcpApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFBCAA97B5E00649521E1D4 /* Pods-bcpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bcpApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-bcpApp/Pods-bcpApp.release.xcconfig"; sourceTree = "<group>"; };
-		F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		F90FDFA21D5174F70023A703 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = events.json; path = ../../Documents/BellEvents/events.json; sourceTree = "<group>"; };
 		F92873DD1D5031EB008A2714 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		F9325F531D59938E00C3CE37 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 				F9C97E381D4FB7C600C9573C /* GradebookViewController.swift */,
 				F9C97E3A1D4FC34600C9573C /* EmailViewController.swift */,
 				F93FA3871D500F1000C54AA8 /* LoginViewController.swift */,
-				F90FDF9E1D51117B0023A703 /* CalendarViewController.swift */,
 				F97F30491D51B4B80013CECD /* CalViewController.swift */,
 			);
 			path = ViewControllers;
@@ -372,7 +369,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90FDF9F1D51117B0023A703 /* CalendarViewController.swift in Sources */,
 				F97F304A1D51B4B80013CECD /* CalViewController.swift in Sources */,
 				F93FA3881D500F1000C54AA8 /* LoginViewController.swift in Sources */,
 				F9C97E2B1D4FB78300C9573C /* bcpApp.xcdatamodeld in Sources */,
